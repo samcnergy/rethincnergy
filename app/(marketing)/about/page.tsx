@@ -76,10 +76,11 @@ export default function AboutPage() {
               </p>
               <p>
                 We started with marketing audits, then expanded into software. Today
-                ReTHINK CNERGY runs two of its own products — SiteMarketing.ai for AI-driven
-                marketing strategy, and Powerful Blueprints for long-form career
-                storytelling — and advises a small number of independent client firms on
-                strategy, GEO readiness, and content systems.
+                ReTHINK CNERGY runs three of its own products — SiteMarketing.ai for
+                AI-driven marketing strategy, Brain.Gritiva for AI agent orchestration,
+                and Powerful Blueprints for long-form career storytelling — and advises a
+                small number of independent client firms on strategy, GEO readiness, and
+                content systems.
               </p>
               <p>
                 We believe in substance over hype, execution over promises, and building

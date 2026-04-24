@@ -25,11 +25,11 @@ export function ProductGrid({ campaign = "home" }: { campaign?: string }) {
             </h2>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-ink-200">
-            Two ReTHINK CNERGY products, each solving a concrete problem for a specific
+            Three ReTHINK CNERGY products, each solving a concrete problem for a specific
             audience. No vaporware, no landing-page theater.
           </p>
         </div>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.map((p) => (
             <li key={p.slug}>
               <article className="group flex h-full flex-col rounded-lg border border-ink-600 bg-ink-700 p-6 transition-colors hover:border-copper-500">

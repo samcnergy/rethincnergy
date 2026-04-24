@@ -12,7 +12,7 @@ import { absoluteUrl } from "@/lib/utils";
 export const metadata = buildMetadata({
   title: "Products",
   description:
-    "SiteMarketing.ai and Powerful Blueprints — the two software products built and run by ReTHINK CNERGY.",
+    "SiteMarketing.ai, Brain.Gritiva, and Powerful Blueprints — the three software products built and run by ReTHINK CNERGY.",
   path: "/products",
 });
 
@@ -46,7 +46,7 @@ export default function ProductsPage() {
             Production software for small business growth.
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-500 sm:text-xl">
-            Two focused products built and run by ReTHINK CNERGY. Each one solves a
+            Three focused products built and run by ReTHINK CNERGY. Each one solves a
             specific problem for a specific audience. No vaporware. No landing-page
             theater.
           </p>

@@ -1,5 +1,5 @@
 export type Product = {
-  slug: "sitemarketing" | "powerfulblueprints";
+  slug: "sitemarketing" | "powerfulblueprints" | "braingritiva";
   name: string;
   domain: string;
   url: string;
@@ -29,6 +29,24 @@ export const PRODUCTS: Product[] = [
     what:
       "Full-funnel audit · Positioning · Content engine · GEO/AEO readiness · Quarterly strategy reviews.",
     who: "Founders and operators of 10–200 person businesses ready to invest in getting marketing right.",
+  },
+  {
+    slug: "braingritiva",
+    name: "Brain.Gritiva",
+    domain: "brain.gritiva.com",
+    url: "https://brain.gritiva.com",
+    tagline: "An AI orchestrator for operators who want to build and run their own agents.",
+    category: "AI orchestration",
+    audience:
+      "Technical operators and small business owners who want control over their AI stack without running enterprise infrastructure.",
+    problem:
+      "Off-the-shelf chatbots don&rsquo;t give enough control. Enterprise AI platforms are overkill and expensive. The middle ground — where you can configure your own agents, swap models, and watch what&rsquo;s actually happening — has been missing.",
+    description:
+      "Brain.Gritiva is a hosted workspace for building, testing, and running custom AI agents. Chat with multiple open-source models, compose agents with specific instructions and tools, monitor the Brain Server, and deploy each agent to the workflow where it earns its keep.",
+    what:
+      "Multi-model chat · Custom agent builder · Brain Server monitoring · Deployment controls · Open-source model support.",
+    who:
+      "Operators who want a real grip on their AI — not a walled-garden chatbot and not a DIY Kubernetes project.",
   },
   {
     slug: "powerfulblueprints",
