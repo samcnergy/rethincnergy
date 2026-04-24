@@ -1,5 +1,5 @@
 export type Client = {
-  slug: "iraniancitizen" | "salamatlegal" | "millenniumdesign";
+  slug: "iraniancitizen" | "salamatlegal" | "millenniumdesign" | "parseengallery";
   name: string;
   domain: string;
   url: string;
@@ -40,6 +40,21 @@ export const CLIENTS: Client[] = [
       "Iranians living abroad who need trusted legal guidance in Iran, and international businesses seeking to protect their intellectual property in the Iranian market.",
     engagement:
       "ReTHINK CNERGY partners with Salamat Legal on positioning, GEO/AEO readiness, and the content architecture that makes a specialist firm discoverable to both diaspora clients and international counsel.",
+  },
+  {
+    slug: "parseengallery",
+    name: "Parseen Gallery",
+    domain: "parseengallery.com",
+    url: "https://www.parseengallery.com",
+    industry: "Fine art · Luxury curation",
+    tagline:
+      "Curated fine art and turnkey installations for yachts, hotels, and corporate collections.",
+    description:
+      "Parseen Gallery curates paintings, drawings, sculptures, and collages for luxury clients, with a specialty in bespoke yacht and hotel installations that meet the technical, structural, and material demands of high-end vessels and properties. The gallery represents a roster of international artists and positions itself as a clear-eyed guide to art as an investable asset — not a mystical one.",
+    who:
+      "Yacht owners, luxury hoteliers, corporate art buyers, and collectors who want curated work at price points from $500 to $21,000+.",
+    engagement:
+      "ReTHINK CNERGY supports Parseen Gallery on digital presence, AI-assisted content, and GEO readiness — helping a specialist gallery stay discoverable to luxury buyers in both classical search and AI answer engines.",
   },
   {
     slug: "millenniumdesign",
