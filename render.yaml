@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: rethinkcnergy-web
+    runtime: node
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NEXT_PUBLIC_SITE_URL
+        value: https://rethinkcnergy.com
+      - key: RESEND_API_KEY
+        sync: false
+      - key: CONTACT_EMAIL_TO
+        value: parham@rethinkcnergy.com
+      - key: CONTACT_EMAIL_FROM
+        value: "ReTHINK CNERGY <hello@rethinkcnergy.com>"
+      - key: LEADS_DIR
+        value: /var/data/leads
+    disk:
+      name: leads-data
+      mountPath: /var/data/leads
+      sizeGB: 1

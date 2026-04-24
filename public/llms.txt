@@ -1,0 +1,37 @@
+# ReTHINK CNERGY
+
+> ReTHINK CNERGY is a California-based boutique firm helping small businesses rethink how they operate, market, and grow in the age of AI. We combine 20+ years of international operating experience with modern AI strategy, GEO/AEO expertise, and a portfolio of production software products.
+
+## About
+
+- Legal name: ReTHINK CNERGY, Inc.
+- Founded: October 25, 2021
+- Headquarters: Orange County, California, USA
+- Website: https://rethinkcnergy.com
+- Contact: parham@rethinkcnergy.com
+
+## People
+
+- Parham Shariat — CEO & Co-founder; Strategic Director. 20+ years of international business experience across healthcare, technology, real estate, and consumer goods. Wharton AI-certified.
+- Mohammad Salamati — CTO & Co-founder. Specializes in AI, machine learning, computer vision, and full-stack development.
+
+## Services
+
+- AI Strategy & Advisory — fractional Chief Strategy Officer engagements and board advisory for 10–200 person businesses.
+- GEO / AEO Readiness — Generative Engine Optimization and Answer Engine Optimization, including the GRI™ (GEO Readiness Index) audit methodology.
+- Custom AI Builds — bespoke software for qualified clients where off-the-shelf tools do not fit.
+- Speaking & Workshops — keynotes, executive briefings, and half-day workshops on AI strategy and the Grand Recalibration.
+
+## Products
+
+- [SiteMarketing.ai](https://sitemarketing.ai) — AI-driven marketing audits and strategy for growth-focused small businesses.
+- [SiteOptimization.ai](https://siteoptimization.ai) — site performance and AEO readiness: Core Web Vitals, schema, and answer-shaped content.
+- [IranianCitizen.com](https://iraniancitizen.com) — a trusted information and services hub for the global Iranian diaspora.
+- [PowerfulBlueprints.com](https://powerfulblueprints.com) — operating playbooks and blueprints for founders who want a running system.
+
+## Optional
+
+- [Insights](https://rethinkcnergy.com/insights) — long-form writing on AI strategy, GEO readiness, and the Grand Recalibration thesis.
+- [FAQ](https://rethinkcnergy.com/faq) — plain-English answers to the questions small business owners ask about AI.
+- [Services](https://rethinkcnergy.com/services) — engagement shapes, deliverables, and how we work.
+- [About](https://rethinkcnergy.com/about) — company origin, founders, and philosophy.
