@@ -13,7 +13,7 @@ const PILLARS = [
     icon: Code2,
     title: "Software",
     body:
-      "A focused portfolio of products — SiteMarketing.ai, SiteOptimization.ai, IranianCitizen.com, PowerfulBlueprints.com — each solving a specific problem for small and mid-sized businesses.",
+      "Two ReTHINK CNERGY products — SiteMarketing.ai for AI-driven marketing strategy and Powerful Blueprints for career storytelling from proven professionals.",
   },
   {
     icon: Workflow,

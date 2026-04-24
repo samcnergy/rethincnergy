@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/hero";
 import { CredibilityStrip } from "@/components/sections/credibility-strip";
 import { WhatWeDo } from "@/components/sections/what-we-do";
 import { ProductGrid } from "@/components/sections/product-grid";
+import { ClientGrid } from "@/components/sections/client-grid";
 import { Philosophy } from "@/components/sections/philosophy";
 import { InsightsPreview } from "@/components/sections/insights-preview";
 import { CtaBlock } from "@/components/sections/cta-block";
@@ -21,6 +22,7 @@ export default function HomePage() {
       <CredibilityStrip />
       <WhatWeDo />
       <ProductGrid campaign="home" />
+      <ClientGrid campaign="home" />
       <Philosophy />
       <InsightsPreview />
       <CtaBlock

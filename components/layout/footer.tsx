@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/container";
 import { BrandMark } from "@/components/layout/brand-mark";
-import { PRODUCTS, productUtmUrl } from "@/lib/products";
+import { PRODUCTS } from "@/lib/products";
+import { CLIENTS } from "@/lib/clients";
 
 const YEAR = new Date().getFullYear();
 
@@ -44,19 +45,17 @@ export function SiteFooter() {
             ))}
           </ul>
         </nav>
-        <nav aria-label="External" className="text-sm">
-          <h4 className="mb-4 font-serif text-base text-ink-800">Visit</h4>
+        <nav aria-label="Clients" className="text-sm">
+          <h4 className="mb-4 font-serif text-base text-ink-800">Clients</h4>
           <ul className="space-y-3 text-ink-500">
-            {PRODUCTS.map((p) => (
-              <li key={p.slug}>
-                <a
-                  href={productUtmUrl(p, "footer")}
-                  target="_blank"
-                  rel="noopener"
+            {CLIENTS.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  href={`/clients/${c.slug}`}
                   className="hover:text-copper-600"
                 >
-                  {p.domain} ↗
-                </a>
+                  {c.name}
+                </Link>
               </li>
             ))}
           </ul>

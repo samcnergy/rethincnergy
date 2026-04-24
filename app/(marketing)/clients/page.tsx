@@ -1,19 +1,19 @@
 import Link from "next/link";
-import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
 import { Badge } from "@/components/ui/badge";
 import { CtaBlock } from "@/components/sections/cta-block";
 import { JsonLd } from "@/components/seo/json-ld";
-import { PRODUCTS, productUtmUrl } from "@/lib/products";
+import { CLIENTS, clientUtmUrl } from "@/lib/clients";
 import { buildMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/utils";
 
 export const metadata = buildMetadata({
-  title: "Products",
+  title: "Clients",
   description:
-    "SiteMarketing.ai and Powerful Blueprints — the two software products built and run by ReTHINK CNERGY.",
-  path: "/products",
+    "Independent firms ReTHINK CNERGY advises on strategy, GEO readiness, and AI-assisted content systems.",
+  path: "/clients",
 });
 
 const BREADCRUMB_JSONLD = {
@@ -21,59 +21,59 @@ const BREADCRUMB_JSONLD = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
-    { "@type": "ListItem", position: 2, name: "Products", item: absoluteUrl("/products") },
+    { "@type": "ListItem", position: 2, name: "Clients", item: absoluteUrl("/clients") },
   ],
 };
 
-const PRODUCTS_JSONLD = {
+const CLIENTS_JSONLD = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  itemListElement: PRODUCTS.map((p, i) => ({
+  itemListElement: CLIENTS.map((c, i) => ({
     "@type": "ListItem",
     position: i + 1,
-    url: absoluteUrl(`/products/${p.slug}`),
-    name: p.name,
+    url: absoluteUrl(`/clients/${c.slug}`),
+    name: c.name,
   })),
 };
 
-export default function ProductsPage() {
+export default function ClientsPage() {
   return (
     <>
       <section className="pt-20 lg:pt-28">
         <Container>
-          <p className="text-xs uppercase tracking-[0.22em] text-copper-600">Products</p>
+          <p className="text-xs uppercase tracking-[0.22em] text-copper-600">Clients</p>
           <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-[1.1] text-ink-800 sm:text-6xl lg:text-7xl">
-            Production software for small business growth.
+            Independent firms we advise.
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-500 sm:text-xl">
-            Two focused products built and run by ReTHINK CNERGY. Each one solves a
-            specific problem for a specific audience. No vaporware. No landing-page
-            theater.
+            A small number of firms we partner with on strategy, GEO readiness, and
+            AI-assisted content systems. These are our clients — they run their own
+            businesses. They are not ReTHINK CNERGY products.
           </p>
         </Container>
       </section>
 
-      <section aria-label="All products" className="py-24 lg:py-32">
+      <section aria-label="Client list" className="py-24 lg:py-32">
         <Container>
           <ul className="grid gap-8">
-            {PRODUCTS.map((p) => (
-              <li key={p.slug}>
-                <article className="group grid gap-8 rounded-lg border border-sand-200 bg-card p-8 transition-colors hover:border-copper-400 lg:grid-cols-12 lg:p-10">
+            {CLIENTS.map((c) => (
+              <li key={c.slug}>
+                <article className="grid gap-8 rounded-lg border border-sand-200 bg-card p-8 lg:grid-cols-12 lg:p-10">
                   <div className="min-w-0 lg:col-span-4">
                     <Badge variant="outline" className="w-fit border-copper-400 text-copper-600">
-                      {p.category}
+                      {c.industry}
                     </Badge>
-                    <h2 className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">{p.name}</h2>
-                    <p className="mt-2 text-sm text-ink-400">{p.domain}</p>
+                    <h2 className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">{c.name}</h2>
+                    <p className="mt-2 text-sm text-ink-400">{c.domain}</p>
                     <div className="mt-6 flex flex-wrap items-center gap-4">
                       <Link
-                        href={`/products/${p.slug}`}
+                        href={`/clients/${c.slug}`}
                         className="inline-flex items-center gap-1 text-sm font-medium text-ink-800 hover:text-copper-600"
                       >
-                        Learn more <ArrowRight className="size-4" />
+                        Our role <ArrowRight className="size-4" />
                       </Link>
                       <a
-                        href={productUtmUrl(p, "products")}
+                        href={clientUtmUrl(c, "clients-list")}
                         target="_blank"
                         rel="noopener"
                         className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
@@ -83,18 +83,20 @@ export default function ProductsPage() {
                     </div>
                   </div>
                   <div className="min-w-0 space-y-5 text-base leading-relaxed text-ink-600 lg:col-span-8">
-                    <p className="font-serif text-xl text-ink-800">{p.tagline}</p>
-                    <p>{p.description}</p>
-                    <dl className="grid gap-5 border-t border-sand-200 pt-5 sm:grid-cols-3">
+                    <p className="font-serif text-xl text-ink-800">{c.tagline}</p>
+                    <p>{c.description}</p>
+                    <dl className="grid gap-5 border-t border-sand-200 pt-5 sm:grid-cols-2">
                       <div>
-                        <dt className="text-xs uppercase tracking-wider text-copper-600">Who</dt>
-                        <dd className="mt-1 text-sm text-ink-600">{p.who}</dd>
-                      </div>
-                      <div className="sm:col-span-2">
                         <dt className="text-xs uppercase tracking-wider text-copper-600">
-                          What&apos;s included
+                          Who they serve
                         </dt>
-                        <dd className="mt-1 text-sm text-ink-600">{p.what}</dd>
+                        <dd className="mt-1 text-sm text-ink-600">{c.who}</dd>
+                      </div>
+                      <div>
+                        <dt className="text-xs uppercase tracking-wider text-copper-600">
+                          Our role
+                        </dt>
+                        <dd className="mt-1 text-sm text-ink-600">{c.engagement}</dd>
                       </div>
                     </dl>
                   </div>
@@ -106,16 +108,15 @@ export default function ProductsPage() {
       </section>
 
       <CtaBlock
-        eyebrow="Not sure which one?"
-        heading="We&rsquo;ll help you pick the right surface."
-        body="Tell us a little about your business and we&rsquo;ll point you to the product — or the engagement — that fits. No pressure, no pitch."
+        eyebrow="Looking for a similar engagement?"
+        heading="If you&rsquo;re a specialist firm that needs an AI-fluent strategy partner, start here."
         primaryLabel="Talk to us"
         secondaryHref="/services"
         secondaryLabel="See services"
       />
 
-      <JsonLd id="products-list-jsonld" data={PRODUCTS_JSONLD} />
-      <JsonLd id="products-breadcrumb-jsonld" data={BREADCRUMB_JSONLD} />
+      <JsonLd id="clients-list-jsonld" data={CLIENTS_JSONLD} />
+      <JsonLd id="clients-breadcrumb-jsonld" data={BREADCRUMB_JSONLD} />
     </>
   );
 }

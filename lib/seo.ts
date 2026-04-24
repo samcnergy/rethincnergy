@@ -67,8 +67,6 @@ export const ORGANIZATION_JSONLD = {
   },
   sameAs: [
     "https://sitemarketing.ai",
-    "https://siteoptimization.ai",
-    "https://iraniancitizen.com",
     "https://powerfulblueprints.com",
   ],
   description: SITE_DESCRIPTION,

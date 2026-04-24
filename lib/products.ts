@@ -1,5 +1,5 @@
 export type Product = {
-  slug: "sitemarketing" | "siteoptimization" | "iraniancitizen" | "powerfulblueprints";
+  slug: "sitemarketing" | "powerfulblueprints";
   name: string;
   domain: string;
   url: string;
@@ -31,57 +31,22 @@ export const PRODUCTS: Product[] = [
     who: "Founders and operators of 10–200 person businesses ready to invest in getting marketing right.",
   },
   {
-    slug: "siteoptimization",
-    name: "SiteOptimization.ai",
-    domain: "siteoptimization.ai",
-    url: "https://siteoptimization.ai",
-    tagline: "Make your site faster, clearer, and more answerable by AI search.",
-    category: "Site performance & AEO",
-    audience:
-      "Businesses whose website is the primary sales asset and cannot afford to lose visibility in AI-powered search.",
-    problem:
-      "Google is no longer the only discovery surface. ChatGPT, Perplexity, Claude, and Gemini cite sites that are fast, structured, and answer questions directly — and ignore the rest.",
-    description:
-      "SiteOptimization.ai diagnoses site performance, information architecture, and AEO readiness, then ships the changes your team needs to stay visible in the new discovery stack.",
-    what:
-      "Core Web Vitals remediation · Schema & JSON-LD · AEO content restructuring · llms.txt authoring · Ongoing monitoring.",
-    who: "Owners of content-heavy sites, e-commerce operators, and services businesses that depend on organic visibility.",
-  },
-  {
-    slug: "iraniancitizen",
-    name: "IranianCitizen.com",
-    domain: "iraniancitizen.com",
-    url: "https://iraniancitizen.com",
-    tagline: "A trusted information and services hub for the Iranian diaspora.",
-    category: "Diaspora services",
-    audience:
-      "Iranian-Americans and the global Iranian diaspora seeking reliable information, community, and services.",
-    problem:
-      "The Iranian diaspora is underserved by credible, bilingual resources that respect both cultural nuance and modern standards of information quality.",
-    description:
-      "IranianCitizen.com is a growing hub for community news, immigration guidance, professional networks, and practical services for Iranians living outside Iran.",
-    what:
-      "Curated news · Legal & immigration guides · Professional directories · Community features.",
-    who:
-      "Iranian-Americans, dual citizens, students, and professionals across the global diaspora.",
-  },
-  {
     slug: "powerfulblueprints",
-    name: "PowerfulBlueprints.com",
+    name: "Powerful Blueprints",
     domain: "powerfulblueprints.com",
     url: "https://powerfulblueprints.com",
-    tagline: "Operating blueprints and playbooks for founders who want a system, not a seminar.",
-    category: "Operating playbooks",
+    tagline: "Career stories from proven professionals — the story behind the advice.",
+    category: "Editorial platform",
     audience:
-      "First-time and second-time founders who need a running system — finance, ops, marketing, team — not another course.",
+      "Aspiring professionals, readers, writers, and art audiences who want the real path, not polished highlight reels.",
     problem:
-      "Founders drown in fragmented advice. What they need is a connected operating blueprint that fits a real small business and survives contact with reality.",
+      "Most career content is advice without the story. Readers end up with checklists that don't travel — no context, no decisions, no honest account of what it took.",
     description:
-      "PowerfulBlueprints.com delivers practical, opinionated operating playbooks drawn from 20+ years of running and advising businesses across healthcare, real estate, and consumer goods.",
+      "Powerful Blueprints is a structured interview platform featuring career stories from proven professionals across three editions: CEO, Author, and Artist. A consistent question framework makes the stories comparable, so readers can extract blueprints they can actually apply.",
     what:
-      "Operating playbooks · Founder toolkits · Templates & checklists · Deep-dive workshops.",
+      "CEO edition · Author edition · Artist edition · Free permanent access · Editorial review for authenticity.",
     who:
-      "Founders and general managers of 1–50 person businesses who prefer clarity to hype.",
+      "Readers studying the real arc of a career — aspiring professionals, young leaders, writers, collectors, and audiences who want the why behind the decisions.",
   },
 ];
 

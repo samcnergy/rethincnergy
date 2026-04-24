@@ -1,6 +1,6 @@
 # ReTHINK CNERGY
 
-> ReTHINK CNERGY is a California-based boutique firm helping small businesses rethink how they operate, market, and grow in the age of AI. We combine 20+ years of international operating experience with modern AI strategy, GEO/AEO expertise, and a portfolio of production software products.
+> ReTHINK CNERGY is a California-based boutique firm helping small businesses rethink how they operate, market, and grow in the age of AI. We combine 20+ years of international operating experience with modern AI strategy, GEO/AEO expertise, and two of our own software products, plus advisory engagements with a small number of independent client firms.
 
 ## About
 
@@ -22,12 +22,15 @@
 - Custom AI Builds — bespoke software for qualified clients where off-the-shelf tools do not fit.
 - Speaking & Workshops — keynotes, executive briefings, and half-day workshops on AI strategy and the Grand Recalibration.
 
-## Products
+## Products (built and run by ReTHINK CNERGY)
 
 - [SiteMarketing.ai](https://sitemarketing.ai) — AI-driven marketing audits and strategy for growth-focused small businesses.
-- [SiteOptimization.ai](https://siteoptimization.ai) — site performance and AEO readiness: Core Web Vitals, schema, and answer-shaped content.
-- [IranianCitizen.com](https://iraniancitizen.com) — a trusted information and services hub for the global Iranian diaspora.
-- [PowerfulBlueprints.com](https://powerfulblueprints.com) — operating playbooks and blueprints for founders who want a running system.
+- [Powerful Blueprints](https://powerfulblueprints.com) — a structured interview platform featuring career stories from proven CEOs, authors, and artists.
+
+## Clients (independent firms we advise)
+
+- [Iranian Citizen Services](https://www.iraniancitizen.com) — document consulting for Iranians in the U.S. and Canada: passports, national ID (smart cards), birth certificates, powers of attorney, and Mikhak. Not a law firm.
+- [Salamat Legal](https://salamatlegal.com) — comprehensive legal services in Iranian real estate, family, and intellectual property law; offices in Tehran and Orange County.
 
 ## Optional
 

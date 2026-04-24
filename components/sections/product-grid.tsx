@@ -21,24 +21,22 @@ export function ProductGrid({ campaign = "home" }: { campaign?: string }) {
               id="product-grid-heading"
               className="mt-4 font-serif text-4xl leading-tight text-sand-50 sm:text-5xl"
             >
-              Four products, one operating philosophy.
+              Products we build. Clients we advise.
             </h2>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-ink-200">
-            Each product in the ReTHINK CNERGY family solves a concrete problem for a
-            specific audience. No vaporware, no landing-page theater.
+            Two ReTHINK CNERGY products, each solving a concrete problem for a specific
+            audience. No vaporware, no landing-page theater.
           </p>
         </div>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2">
           {PRODUCTS.map((p) => (
             <li key={p.slug}>
               <article className="group flex h-full flex-col rounded-lg border border-ink-600 bg-ink-700 p-6 transition-colors hover:border-copper-500">
                 <Badge variant="outline" className="w-fit border-copper-500 text-copper-300">
                   {p.category}
                 </Badge>
-                <h3 className="mt-4 font-serif text-2xl text-sand-50 [overflow-wrap:anywhere]">
-                  {p.name}
-                </h3>
+                <h3 className="mt-4 font-serif text-2xl text-sand-50">{p.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink-200">{p.tagline}</p>
                 <p className="mt-5 text-xs uppercase tracking-widest text-copper-400">For</p>
                 <p className="mt-1 text-sm text-ink-100">{p.who}</p>

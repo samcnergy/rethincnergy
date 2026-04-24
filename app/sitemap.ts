@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { PRODUCTS } from "@/lib/products";
+import { CLIENTS } from "@/lib/clients";
 import { getAllArticles } from "@/lib/articles";
 import { SITE_URL } from "@/lib/utils";
 
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/services",
     "/products",
+    "/clients",
     "/insights",
     "/faq",
     "/contact",
@@ -29,6 +31,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const clientRoutes: MetadataRoute.Sitemap = CLIENTS.map((c) => ({
+    url: `${SITE_URL}/clients/${c.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
   const articleRoutes: MetadataRoute.Sitemap = getAllArticles().map((article) => ({
     url: `${SITE_URL}/insights/${article.slug}`,
     lastModified: new Date(article.date),
@@ -36,5 +45,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...productRoutes, ...articleRoutes];
+  return [...staticRoutes, ...productRoutes, ...clientRoutes, ...articleRoutes];
 }

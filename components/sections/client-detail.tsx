@@ -6,23 +6,20 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CtaBlock } from "@/components/sections/cta-block";
 import { JsonLd } from "@/components/seo/json-ld";
-import type { Product } from "@/lib/products";
-import { productUtmUrl } from "@/lib/products";
+import { clientUtmUrl, type Client } from "@/lib/clients";
 import { absoluteUrl } from "@/lib/utils";
 
-interface ProductDetailProps {
-  product: Product;
+interface ClientDetailProps {
+  client: Client;
 }
 
-export function ProductDetail({ product: p }: ProductDetailProps) {
-  const productJsonLd = {
+export function ClientDetail({ client: c }: ClientDetailProps) {
+  const orgJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    name: p.name,
-    description: p.description,
-    url: p.url,
-    brand: { "@type": "Brand", name: "ReTHINK CNERGY" },
-    category: p.category,
+    "@type": "Organization",
+    name: c.name,
+    url: c.url,
+    description: c.description,
   };
 
   const breadcrumbJsonLd = {
@@ -30,12 +27,12 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
-      { "@type": "ListItem", position: 2, name: "Products", item: absoluteUrl("/products") },
+      { "@type": "ListItem", position: 2, name: "Clients", item: absoluteUrl("/clients") },
       {
         "@type": "ListItem",
         position: 3,
-        name: p.name,
-        item: absoluteUrl(`/products/${p.slug}`),
+        name: c.name,
+        item: absoluteUrl(`/clients/${c.slug}`),
       },
     ],
   };
@@ -47,22 +44,22 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
           <nav aria-label="Breadcrumb" className="text-xs uppercase tracking-[0.22em] text-ink-400">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/products" className="hover:text-copper-600">
-                  Products
+                <Link href="/clients" className="hover:text-copper-600">
+                  Clients
                 </Link>
               </li>
               <li aria-hidden>/</li>
-              <li className="text-copper-600">{p.category}</li>
+              <li className="text-copper-600">{c.industry}</li>
             </ol>
           </nav>
           <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] text-ink-800 sm:text-6xl lg:text-7xl">
-            {p.name}
+            {c.name}
           </h1>
-          <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">{p.tagline}</p>
+          <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">{c.tagline}</p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" variant="accent">
-              <a href={productUtmUrl(p, "detail")} target="_blank" rel="noopener">
-                Visit {p.domain} <ArrowUpRight className="size-4" />
+              <a href={clientUtmUrl(c, "detail")} target="_blank" rel="noopener">
+                Visit {c.domain} <ArrowUpRight className="size-4" />
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
@@ -77,30 +74,32 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <Badge variant="outline" className="border-copper-400 text-copper-600">
-                {p.category}
+                {c.industry}
               </Badge>
               <h2 className="mt-5 font-serif text-3xl text-ink-800 sm:text-4xl">
-                The problem
+                About {c.name}
               </h2>
-              <p className="mt-5 text-base leading-relaxed text-ink-600">{p.problem}</p>
+              <p className="mt-5 text-base leading-relaxed text-ink-600">{c.description}</p>
             </div>
             <div className="space-y-6 lg:col-span-7">
               <h2 className="font-serif text-3xl text-ink-800 sm:text-4xl">
-                What {p.name} does
+                Our role
               </h2>
-              <p className="text-base leading-relaxed text-ink-600">{p.description}</p>
+              <p className="text-base leading-relaxed text-ink-600">{c.engagement}</p>
               <dl className="grid gap-6 border-t border-sand-200 pt-6 sm:grid-cols-2">
                 <div>
                   <dt className="text-xs uppercase tracking-wider text-copper-600">
-                    Who it&apos;s for
+                    Who they serve
                   </dt>
-                  <dd className="mt-2 text-base text-ink-600">{p.audience}</dd>
+                  <dd className="mt-2 text-base text-ink-600">{c.who}</dd>
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-wider text-copper-600">
-                    What&apos;s inside
+                    Relationship
                   </dt>
-                  <dd className="mt-2 text-base text-ink-600">{p.what}</dd>
+                  <dd className="mt-2 text-base text-ink-600">
+                    Independent firm · ReTHINK CNERGY advisory engagement
+                  </dd>
                 </div>
               </dl>
             </div>
@@ -108,33 +107,16 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
         </Container>
       </section>
 
-      <section className="bg-sand-100 py-24 lg:py-32">
-        <Container size="narrow">
-          <p className="text-xs uppercase tracking-[0.22em] text-copper-600">
-            How this fits with ReTHINK CNERGY
-          </p>
-          <h2 className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">
-            One product, part of a system.
-          </h2>
-          <p className="mt-5 text-base leading-relaxed text-ink-600">
-            {p.name} sits inside a broader portfolio of products and advisory work. The
-            same team that built it can help you pick the right combination for where
-            you are — whether that&apos;s a DIY subscription, an assisted rollout, or a
-            fuller advisory engagement.
-          </p>
-        </Container>
-      </section>
-
       <CtaBlock
-        eyebrow={`${p.name} is ready when you are`}
-        heading="Visit the product or talk to us about a tailored engagement."
+        eyebrow={`${c.name} is an independent firm`}
+        heading="Want a similar engagement for your firm?"
         primaryLabel="Book a strategy call"
-        secondaryHref={productUtmUrl(p, "detail-cta")}
-        secondaryLabel={`Visit ${p.domain}`}
+        secondaryHref={clientUtmUrl(c, "detail-cta")}
+        secondaryLabel={`Visit ${c.domain}`}
       />
 
-      <JsonLd id={`product-jsonld-${p.slug}`} data={productJsonLd} />
-      <JsonLd id={`product-breadcrumb-jsonld-${p.slug}`} data={breadcrumbJsonLd} />
+      <JsonLd id={`client-jsonld-${c.slug}`} data={orgJsonLd} />
+      <JsonLd id={`client-breadcrumb-jsonld-${c.slug}`} data={breadcrumbJsonLd} />
     </>
   );
 }
