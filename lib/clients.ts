@@ -1,5 +1,5 @@
 export type Client = {
-  slug: "iraniancitizen" | "salamatlegal";
+  slug: "iraniancitizen" | "salamatlegal" | "millenniumdesign";
   name: string;
   domain: string;
   url: string;
@@ -40,6 +40,21 @@ export const CLIENTS: Client[] = [
       "Iranians living abroad who need trusted legal guidance in Iran, and international businesses seeking to protect their intellectual property in the Iranian market.",
     engagement:
       "ReTHINK CNERGY partners with Salamat Legal on positioning, GEO/AEO readiness, and the content architecture that makes a specialist firm discoverable to both diaspora clients and international counsel.",
+  },
+  {
+    slug: "millenniumdesign",
+    name: "Millennium Design & Services",
+    domain: "millenniumtilemarble.com",
+    url: "https://www.millenniumtilemarble.com",
+    industry: "Construction · General contractor",
+    tagline:
+      "Orange County general contractor with a 30+ year track record in residential and commercial construction.",
+    description:
+      "Millennium Design & Services is an Anaheim-based general contractor operating since 1987. The team handles ground-up construction and renovation — custom homes, whole-house and kitchen/bath remodels, tenant improvements, office additions, site management, and landscape construction — with 1,400+ completed projects, 45 professionals on staff, and long-standing supplier partnerships.",
+    who:
+      "Residential and commercial clients across Orange County who want a contractor with a long track record and an in-house team, not a broker marking up subs.",
+    engagement:
+      "ReTHINK CNERGY supports Millennium Design & Services on digital presence, GEO readiness, and the content systems that convert a 30+ year project portfolio into discoverable, citable authority for high-consideration construction buyers.",
   },
 ];
 
