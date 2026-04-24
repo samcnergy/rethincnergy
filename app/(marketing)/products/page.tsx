@@ -59,12 +59,14 @@ export default function ProductsPage() {
             {PRODUCTS.map((p) => (
               <li key={p.slug}>
                 <article className="group grid gap-8 rounded-lg border border-sand-200 bg-card p-8 transition-colors hover:border-copper-400 lg:grid-cols-12 lg:p-10">
-                  <div className="lg:col-span-4">
+                  <div className="min-w-0 lg:col-span-4">
                     <Badge variant="outline" className="w-fit border-copper-400 text-copper-600">
                       {p.category}
                     </Badge>
-                    <h2 className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">{p.name}</h2>
-                    <p className="mt-2 text-sm text-ink-400">{p.domain}</p>
+                    <h2 className="mt-4 font-serif text-2xl text-ink-800 [overflow-wrap:anywhere] sm:text-3xl">
+                      {p.name}
+                    </h2>
+                    <p className="mt-2 text-sm text-ink-400 [overflow-wrap:anywhere]">{p.domain}</p>
                     <div className="mt-6 flex flex-wrap items-center gap-4">
                       <Link
                         href={`/products/${p.slug}`}
@@ -82,7 +84,7 @@ export default function ProductsPage() {
                       </a>
                     </div>
                   </div>
-                  <div className="space-y-5 text-base leading-relaxed text-ink-600 lg:col-span-8">
+                  <div className="min-w-0 space-y-5 text-base leading-relaxed text-ink-600 lg:col-span-8">
                     <p className="font-serif text-xl text-ink-800">{p.tagline}</p>
                     <p>{p.description}</p>
                     <dl className="grid gap-5 border-t border-sand-200 pt-5 sm:grid-cols-3">

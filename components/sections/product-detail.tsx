@@ -55,7 +55,7 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
               <li className="text-copper-600">{p.category}</li>
             </ol>
           </nav>
-          <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] text-ink-800 sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 max-w-4xl font-serif text-4xl leading-[1.05] text-ink-800 [overflow-wrap:anywhere] sm:text-5xl lg:text-6xl xl:text-7xl">
             {p.name}
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">{p.tagline}</p>

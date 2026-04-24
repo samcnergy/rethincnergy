@@ -36,7 +36,9 @@ export function ProductGrid({ campaign = "home" }: { campaign?: string }) {
                 <Badge variant="outline" className="w-fit border-copper-500 text-copper-300">
                   {p.category}
                 </Badge>
-                <h3 className="mt-4 font-serif text-2xl text-sand-50">{p.name}</h3>
+                <h3 className="mt-4 font-serif text-2xl text-sand-50 [overflow-wrap:anywhere]">
+                  {p.name}
+                </h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink-200">{p.tagline}</p>
                 <p className="mt-5 text-xs uppercase tracking-widest text-copper-400">For</p>
                 <p className="mt-1 text-sm text-ink-100">{p.who}</p>
