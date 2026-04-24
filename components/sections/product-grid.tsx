@@ -25,17 +25,24 @@ export function ProductGrid({ campaign = "home" }: { campaign?: string }) {
             </h2>
           </div>
           <p className="max-w-md text-sm leading-relaxed text-ink-200">
-            Three ReTHINK CNERGY products, each solving a concrete problem for a specific
+            Four ReTHINK CNERGY products, each solving a concrete problem for a specific
             audience. No vaporware, no landing-page theater.
           </p>
         </div>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {PRODUCTS.map((p) => (
             <li key={p.slug}>
               <article className="group flex h-full flex-col rounded-lg border border-ink-600 bg-ink-700 p-6 transition-colors hover:border-copper-500">
-                <Badge variant="outline" className="w-fit border-copper-500 text-copper-300">
-                  {p.category}
-                </Badge>
+                <div className="flex flex-wrap items-center gap-2">
+                  <Badge variant="outline" className="w-fit border-copper-500 text-copper-300">
+                    {p.category}
+                  </Badge>
+                  {p.comingSoon && (
+                    <Badge variant="accent" className="w-fit">
+                      Pre-launch
+                    </Badge>
+                  )}
+                </div>
                 <h3 className="mt-4 font-serif text-2xl text-sand-50">{p.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ink-200">{p.tagline}</p>
                 <p className="mt-5 text-xs uppercase tracking-widest text-copper-400">For</p>
@@ -47,15 +54,25 @@ export function ProductGrid({ campaign = "home" }: { campaign?: string }) {
                   >
                     Learn more
                   </Link>
-                  <a
-                    href={productUtmUrl(p, campaign)}
-                    target="_blank"
-                    rel="noopener"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-copper-300 hover:text-copper-200"
-                  >
-                    Visit {p.domain}
-                    <ArrowUpRight className="size-4" />
-                  </a>
+                  {p.comingSoon ? (
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-copper-300 hover:text-copper-200"
+                    >
+                      Request a demo
+                      <ArrowUpRight className="size-4" />
+                    </Link>
+                  ) : (
+                    <a
+                      href={productUtmUrl(p, campaign)}
+                      target="_blank"
+                      rel="noopener"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-copper-300 hover:text-copper-200"
+                    >
+                      Visit {p.domain}
+                      <ArrowUpRight className="size-4" />
+                    </a>
+                  )}
                 </div>
               </article>
             </li>

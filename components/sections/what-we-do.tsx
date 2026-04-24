@@ -13,7 +13,7 @@ const PILLARS = [
     icon: Code2,
     title: "Software",
     body:
-      "Three ReTHINK CNERGY products — SiteMarketing.ai for marketing strategy, Brain.Gritiva for AI agent orchestration, and Powerful Blueprints for career storytelling from proven professionals.",
+      "Four ReTHINK CNERGY products — SiteMarketing.ai for marketing strategy, AloHelp (AI-driven Software as a Medical Device for autism diagnosis), Brain.Gritiva for AI agent orchestration, and Powerful Blueprints for career storytelling.",
   },
   {
     icon: Workflow,

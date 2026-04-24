@@ -12,7 +12,7 @@ import { absoluteUrl } from "@/lib/utils";
 export const metadata = buildMetadata({
   title: "Products",
   description:
-    "SiteMarketing.ai, Brain.Gritiva, and Powerful Blueprints — the three software products built and run by ReTHINK CNERGY.",
+    "SiteMarketing.ai, AloHelp, Brain.Gritiva, and Powerful Blueprints — the four software products built and run by ReTHINK CNERGY.",
   path: "/products",
 });
 
@@ -46,9 +46,9 @@ export default function ProductsPage() {
             Production software for small business growth.
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-500 sm:text-xl">
-            Three focused products built and run by ReTHINK CNERGY. Each one solves a
-            specific problem for a specific audience. No vaporware. No landing-page
-            theater.
+            Four focused products built and run by ReTHINK CNERGY — from AI-driven
+            marketing to Software as a Medical Device. Each one solves a specific problem
+            for a specific audience. No vaporware. No landing-page theater.
           </p>
         </Container>
       </section>
@@ -60,9 +60,16 @@ export default function ProductsPage() {
               <li key={p.slug}>
                 <article className="group grid gap-8 rounded-lg border border-sand-200 bg-card p-8 transition-colors hover:border-copper-400 lg:grid-cols-12 lg:p-10">
                   <div className="min-w-0 lg:col-span-4">
-                    <Badge variant="outline" className="w-fit border-copper-400 text-copper-600">
-                      {p.category}
-                    </Badge>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Badge variant="outline" className="w-fit border-copper-400 text-copper-600">
+                        {p.category}
+                      </Badge>
+                      {p.comingSoon && (
+                        <Badge variant="accent" className="w-fit">
+                          Pre-launch
+                        </Badge>
+                      )}
+                    </div>
                     <h2 className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">{p.name}</h2>
                     <p className="mt-2 text-sm text-ink-400">{p.domain}</p>
                     <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -72,14 +79,23 @@ export default function ProductsPage() {
                       >
                         Learn more <ArrowRight className="size-4" />
                       </Link>
-                      <a
-                        href={productUtmUrl(p, "products")}
-                        target="_blank"
-                        rel="noopener"
-                        className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
-                      >
-                        Visit site <ArrowUpRight className="size-4" />
-                      </a>
+                      {p.comingSoon ? (
+                        <Link
+                          href="/contact"
+                          className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
+                        >
+                          Request a demo <ArrowRight className="size-4" />
+                        </Link>
+                      ) : (
+                        <a
+                          href={productUtmUrl(p, "products")}
+                          target="_blank"
+                          rel="noopener"
+                          className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
+                        >
+                          Visit site <ArrowUpRight className="size-4" />
+                        </a>
+                      )}
                     </div>
                   </div>
                   <div className="min-w-0 space-y-5 text-base leading-relaxed text-ink-600 lg:col-span-8">

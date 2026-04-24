@@ -76,8 +76,9 @@ export default function AboutPage() {
               </p>
               <p>
                 We started with marketing audits, then expanded into software. Today
-                ReTHINK CNERGY runs three of its own products — SiteMarketing.ai for
-                AI-driven marketing strategy, Brain.Gritiva for AI agent orchestration,
+                ReTHINK CNERGY runs four of its own products — SiteMarketing.ai for
+                AI-driven marketing strategy, AloHelp (AI-driven Software as a Medical
+                Device for autism diagnosis), Brain.Gritiva for AI agent orchestration,
                 and Powerful Blueprints for long-form career storytelling — and advises a
                 small number of independent client firms on strategy, GEO readiness, and
                 content systems.

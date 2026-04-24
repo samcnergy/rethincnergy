@@ -1,5 +1,5 @@
 export type Product = {
-  slug: "sitemarketing" | "powerfulblueprints" | "braingritiva";
+  slug: "sitemarketing" | "powerfulblueprints" | "braingritiva" | "alohelp";
   name: string;
   domain: string;
   url: string;
@@ -10,6 +10,7 @@ export type Product = {
   what: string;
   who: string;
   category: string;
+  comingSoon?: boolean;
 };
 
 export const PRODUCTS: Product[] = [
@@ -29,6 +30,26 @@ export const PRODUCTS: Product[] = [
     what:
       "Full-funnel audit · Positioning · Content engine · GEO/AEO readiness · Quarterly strategy reviews.",
     who: "Founders and operators of 10–200 person businesses ready to invest in getting marketing right.",
+  },
+  {
+    slug: "alohelp",
+    name: "AloHelp",
+    domain: "alohelp.ai",
+    url: "https://alohelp.ai",
+    tagline:
+      "AI-driven software as a medical device for earlier, more objective autism detection.",
+    category: "Medical diagnostics · SaMD",
+    audience:
+      "Pediatric neurologists, child psychiatrists, and radiology practices that want an objective neuroimaging-based aid to the autism diagnostic workup.",
+    problem:
+      "Autism is often diagnosed years later than it could be. Behavioral assessments like ADOS-2 are subjective, specialist-limited, and slow, while fewer than half of at-risk children are screened by age 3. The window where early intervention compounds the most gets missed.",
+    description:
+      "AloHelp analyzes MRI/fMRI brain imaging together with patient metadata using a multi-branch deep learning model, then returns an autism risk assessment in seconds alongside Grad-CAM visual explanations that show clinicians which brain regions drove the result. It is designed as an objective, reproducible aid to clinical judgment — not a replacement for it.",
+    what:
+      "Structural &amp; functional MRI analysis · Multi-modal deep learning (3D CNN + ResNet + metadata) · Grad-CAM explainability · HIPAA-aligned cloud architecture · Clinician report + secure API.",
+    who:
+      "Pediatric neurology, child psychiatry, and radiology practices ready to integrate an AI-assisted, imaging-based aid into the autism diagnostic workup.",
+    comingSoon: true,
   },
   {
     slug: "braingritiva",

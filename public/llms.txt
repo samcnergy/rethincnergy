@@ -25,6 +25,7 @@
 ## Products (built and run by ReTHINK CNERGY)
 
 - [SiteMarketing.ai](https://sitemarketing.ai) — AI-driven marketing audits and strategy for growth-focused small businesses.
+- [AloHelp](https://rethinkcnergy.com/products/alohelp) — AI-driven Software as a Medical Device (SaMD) for autism detection, using MRI/fMRI brain imaging and deep learning with explainable Grad-CAM visualizations for clinicians. Pre-launch; pursuing FDA De Novo clearance.
 - [Brain.Gritiva](https://brain.gritiva.com) — AI orchestration workspace for building, testing, and running custom AI agents with multi-model support and Brain Server monitoring.
 - [Powerful Blueprints](https://powerfulblueprints.com) — a structured interview platform featuring career stories from proven CEOs, authors, and artists.
 

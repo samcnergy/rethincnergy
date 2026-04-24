@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
@@ -60,14 +60,29 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">{p.tagline}</p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" variant="accent">
-              <a href={productUtmUrl(p, "detail")} target="_blank" rel="noopener">
-                Visit {p.domain} <ArrowUpRight className="size-4" />
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/contact">Talk to the team</Link>
-            </Button>
+            {p.comingSoon ? (
+              <>
+                <Button asChild size="lg" variant="accent">
+                  <Link href="/contact">
+                    Request a demo <ArrowRight className="size-4" />
+                  </Link>
+                </Button>
+                <Badge variant="secondary" className="h-11 rounded-md px-4 text-sm">
+                  Pre-launch · Pursuing FDA De Novo clearance
+                </Badge>
+              </>
+            ) : (
+              <>
+                <Button asChild size="lg" variant="accent">
+                  <a href={productUtmUrl(p, "detail")} target="_blank" rel="noopener">
+                    Visit {p.domain} <ArrowUpRight className="size-4" />
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <Link href="/contact">Talk to the team</Link>
+                </Button>
+              </>
+            )}
           </div>
         </Container>
       </section>
@@ -125,13 +140,24 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
         </Container>
       </section>
 
-      <CtaBlock
-        eyebrow={`${p.name} is ready when you are`}
-        heading="Visit the product or talk to us about a tailored engagement."
-        primaryLabel="Book a strategy call"
-        secondaryHref={productUtmUrl(p, "detail-cta")}
-        secondaryLabel={`Visit ${p.domain}`}
-      />
+      {p.comingSoon ? (
+        <CtaBlock
+          eyebrow={`${p.name} · Pre-launch`}
+          heading="Clinical partners and pilot sites — we&rsquo;d like to talk."
+          body="AloHelp is pre-launch and pursuing FDA De Novo clearance. If you run a pediatric neurology, child psychiatry, or radiology practice and want to evaluate an MRI-based autism diagnostic aid, reach out."
+          primaryLabel="Request a demo"
+          secondaryHref="/services"
+          secondaryLabel="See services"
+        />
+      ) : (
+        <CtaBlock
+          eyebrow={`${p.name} is ready when you are`}
+          heading="Visit the product or talk to us about a tailored engagement."
+          primaryLabel="Book a strategy call"
+          secondaryHref={productUtmUrl(p, "detail-cta")}
+          secondaryLabel={`Visit ${p.domain}`}
+        />
+      )}
 
       <JsonLd id={`product-jsonld-${p.slug}`} data={productJsonLd} />
       <JsonLd id={`product-breadcrumb-jsonld-${p.slug}`} data={breadcrumbJsonLd} />
