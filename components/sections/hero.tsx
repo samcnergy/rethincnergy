@@ -4,6 +4,15 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
 import { Reveal } from "@/components/sections/reveal";
+import { SITE_LAST_UPDATED } from "@/lib/seo";
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 export function Hero() {
   return (
@@ -49,6 +58,12 @@ export function Hero() {
               <Link href="/products">Explore our products</Link>
             </Button>
           </div>
+        </Reveal>
+        <Reveal delay={0.2}>
+          <p className="mt-8 text-xs text-ink-400">
+            <span className="uppercase tracking-wider">Last reviewed</span>{" "}
+            <time dateTime={SITE_LAST_UPDATED}>{formatDate(SITE_LAST_UPDATED)}</time>
+          </p>
         </Reveal>
       </Container>
     </section>

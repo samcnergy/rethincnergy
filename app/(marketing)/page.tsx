@@ -4,9 +4,16 @@ import { WhatWeDo } from "@/components/sections/what-we-do";
 import { ProductGrid } from "@/components/sections/product-grid";
 import { ClientGrid } from "@/components/sections/client-grid";
 import { Philosophy } from "@/components/sections/philosophy";
+import { AtomicAnswers } from "@/components/sections/atomic-answers";
 import { InsightsPreview } from "@/components/sections/insights-preview";
 import { CtaBlock } from "@/components/sections/cta-block";
-import { buildMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/json-ld";
+import {
+  buildMetadata,
+  LOCAL_BUSINESS_JSONLD,
+  HOME_SERVICES_JSONLD,
+  DEFINED_TERMS_JSONLD,
+} from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "ReTHINK CNERGY — AI strategy for small businesses",
@@ -24,6 +31,7 @@ export default function HomePage() {
       <ProductGrid campaign="home" />
       <ClientGrid campaign="home" />
       <Philosophy />
+      <AtomicAnswers />
       <InsightsPreview />
       <CtaBlock
         eyebrow="Work with us"
@@ -33,6 +41,10 @@ export default function HomePage() {
         secondaryHref="/services"
         secondaryLabel="See services"
       />
+
+      <JsonLd id="home-localbusiness-jsonld" data={LOCAL_BUSINESS_JSONLD} />
+      <JsonLd id="home-services-jsonld" data={HOME_SERVICES_JSONLD} />
+      <JsonLd id="home-definedterms-jsonld" data={DEFINED_TERMS_JSONLD} />
     </>
   );
 }

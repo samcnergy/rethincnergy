@@ -3,8 +3,17 @@ import { Container } from "@/components/layout/container";
 import { BrandMark } from "@/components/layout/brand-mark";
 import { PRODUCTS } from "@/lib/products";
 import { CLIENTS } from "@/lib/clients";
+import { SITE_CONTACT, SITE_LAST_UPDATED } from "@/lib/seo";
 
 const YEAR = new Date().getFullYear();
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
 
 export function SiteFooter() {
   return (
@@ -16,9 +25,27 @@ export function SiteFooter() {
             A California-based boutique firm helping small businesses rethink how they
             operate, market, and grow in the age of AI.
           </p>
-          <p className="mt-4 text-xs text-ink-400">
-            ReTHINK CNERGY, Inc. · Orange County, California · Founded October 25, 2021
-          </p>
+          <address
+            className="mt-5 space-y-1 not-italic text-xs text-ink-500"
+            aria-label="ReTHINK CNERGY contact"
+          >
+            <p className="font-medium text-ink-700">ReTHINK CNERGY, Inc.</p>
+            <p>
+              <span itemProp="addressLocality">{SITE_CONTACT.addressLocality}</span>,{" "}
+              <span itemProp="addressRegion">{SITE_CONTACT.addressRegion}</span>,{" "}
+              <span itemProp="addressCountry">USA</span>
+            </p>
+            <p>
+              <a
+                href={`mailto:${SITE_CONTACT.email}`}
+                className="hover:text-copper-600"
+                itemProp="email"
+              >
+                {SITE_CONTACT.email}
+              </a>
+            </p>
+            <p>Founded October 25, 2021</p>
+          </address>
         </div>
         <nav aria-label="Company" className="text-sm">
           <h4 className="mb-4 font-serif text-base text-ink-800">Company</h4>
@@ -65,9 +92,8 @@ export function SiteFooter() {
         <Container className="flex flex-col items-start justify-between gap-3 py-6 text-xs text-ink-400 sm:flex-row sm:items-center">
           <p>© {YEAR} ReTHINK CNERGY, Inc. All rights reserved.</p>
           <p>
-            <a href="mailto:parham@rethinkcnergy.com" className="hover:text-copper-600">
-              parham@rethinkcnergy.com
-            </a>
+            <span className="uppercase tracking-wider">Site last reviewed</span>{" "}
+            <time dateTime={SITE_LAST_UPDATED}>{formatDate(SITE_LAST_UPDATED)}</time>
           </p>
         </Container>
       </div>
