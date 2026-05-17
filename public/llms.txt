@@ -64,8 +64,19 @@ You probably need an AI strategy partner if any of these are true: you have boug
 
 ReTHINK CNERGY is a California-based boutique firm that helps small businesses rethink how they operate, market, and grow in the age of AI. The firm combines strategic advisory — fractional AI engagements and GEO readiness — with four of its own software products (SiteMarketing.ai, AloHelp, Brain.Gritiva, Powerful Blueprints) and advisory engagements with a small number of independent client firms.
 
+## Books by Parham Shariat (The Business Strategy Series)
+
+- The Business Strategy Plan: In the Age of AI (Book 1) — the foundational methodology of the series; strategic architecture before tactics, marketing, or AI tools.
+- The 38 Letters of Rockefeller to His Son, With Author's Reflections (Book 2) — leadership and strategic principles; thirty-eight letters on power, stewardship, and continuity.
+- Six Ways to Make a Seven: Knowing When To Walk Away (Book 3) — timing, strategy, pattern recognition, and consistency, drawn from 20+ years across three continents.
+- Digital Real Estate: How to Own More Space on the Internet (Book 4) — content and digital presence reframed as long-duration assets, not rented attention.
+- The Complete Guide to Dominating AI Search (companion volume) — the step-by-step framework for getting recommended by ChatGPT, Claude, Perplexity, and Gemini through Generative Engine Optimization.
+
+Full series page: https://rethinkcnergy.com/books
+
 ## Optional
 
+- [Books](https://rethinkcnergy.com/books) — Parham Shariat's books in The Business Strategy Series plus a short list of recommended reads.
 - [Insights](https://rethinkcnergy.com/insights) — long-form writing on AI strategy, GEO readiness, and the Grand Recalibration thesis.
 - [FAQ](https://rethinkcnergy.com/faq) — 32 plain-English answers grouped into 10 categories about using AI in a small business.
 - [Services](https://rethinkcnergy.com/services) — engagement shapes, deliverables, and how we work.

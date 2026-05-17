@@ -246,6 +246,41 @@ export const PARHAM_JSONLD = {
     "@type": "CollegeOrUniversity",
     name: "The Wharton School",
   },
+  hasOccupation: [
+    {
+      "@type": "Occupation",
+      name: "Author, business strategist, AI advisor",
+    },
+  ],
+  // Books are enumerated as `author`-of works; keeps the schema graph clean
+  // when this Person blob ships on pages outside /books.
+  author: [
+    {
+      "@type": "Book",
+      name: "The Business Strategy Plan: In the Age of AI",
+      url: absoluteUrl("/books#business-strategy-plan-age-of-ai"),
+    },
+    {
+      "@type": "Book",
+      name: "The 38 Letters of Rockefeller to His Son, With Author's Reflections",
+      url: absoluteUrl("/books#38-letters-rockefeller-to-his-son"),
+    },
+    {
+      "@type": "Book",
+      name: "Six Ways to Make a Seven: Knowing When To Walk Away",
+      url: absoluteUrl("/books#six-ways-to-make-a-seven"),
+    },
+    {
+      "@type": "Book",
+      name: "Digital Real Estate: How to Own More Space on the Internet",
+      url: absoluteUrl("/books#digital-real-estate"),
+    },
+    {
+      "@type": "Book",
+      name: "The Complete Guide to Dominating AI Search",
+      url: absoluteUrl("/books#complete-guide-to-dominating-ai-search"),
+    },
+  ],
   url: absoluteUrl("/about"),
 };
 

@@ -52,6 +52,7 @@ export function SiteFooter() {
           <ul className="space-y-3 text-ink-500">
             <li><Link href="/about" className="hover:text-copper-600">About</Link></li>
             <li><Link href="/services" className="hover:text-copper-600">Services</Link></li>
+            <li><Link href="/books" className="hover:text-copper-600">Books</Link></li>
             <li><Link href="/insights" className="hover:text-copper-600">Insights</Link></li>
             <li><Link href="/faq" className="hover:text-copper-600">FAQ</Link></li>
             <li><Link href="/contact" className="hover:text-copper-600">Contact</Link></li>
