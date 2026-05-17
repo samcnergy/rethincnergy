@@ -136,13 +136,6 @@ export default function BooksPage() {
                         className="object-cover"
                       />
                     </div>
-                    <p className="mt-4 text-xs text-ink-400">
-                      Cover image is a typographic placeholder. Replace{" "}
-                      <code className="rounded bg-sand-100 px-1 py-0.5 text-[11px] text-ink-600">
-                        {book.cover}
-                      </code>{" "}
-                      with the final artwork.
-                    </p>
                   </div>
 
                   <div className="min-w-0 lg:col-span-8">
