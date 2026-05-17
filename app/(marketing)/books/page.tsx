@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BookOpen } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
 import { Badge } from "@/components/ui/badge";
@@ -56,6 +56,16 @@ const BOOK_SERIES_JSONLD = {
       bookFormat: "https://schema.org/Paperback",
       isbn: "",
     },
+    ...(b.buyUrl
+      ? {
+          offers: {
+            "@type": "Offer",
+            url: b.buyUrl,
+            seller: { "@type": "Organization", name: "Amazon" },
+            availability: "https://schema.org/InStock",
+          },
+        }
+      : {}),
   })),
 };
 
@@ -182,11 +192,21 @@ export default function BooksPage() {
 
                     <div className="mt-8 flex flex-wrap items-center gap-4">
                       {book.buyUrl ? (
-                        <Button asChild size="sm" variant="default">
-                          <a href={book.buyUrl} target="_blank" rel="noopener">
-                            Get the book <ArrowRight className="size-4" />
-                          </a>
-                        </Button>
+                        <>
+                          <Button asChild size="sm" variant="default">
+                            <a
+                              href={book.buyUrl}
+                              target="_blank"
+                              rel="noopener nofollow"
+                              aria-label={`Buy ${book.title} on Amazon`}
+                            >
+                              Buy on Amazon <ArrowUpRight className="size-4" />
+                            </a>
+                          </Button>
+                          <span className="text-xs text-ink-400">
+                            Ships from Amazon · Opens in a new tab
+                          </span>
+                        </>
                       ) : (
                         <Button asChild size="sm" variant="default">
                           <Link href="/contact">

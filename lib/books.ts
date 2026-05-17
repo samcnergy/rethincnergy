@@ -41,6 +41,7 @@ export const AUTHORED_BOOKS: AuthoredBook[] = [
       "The Business Strategy Plan in the Age of AI — Book 1, The Business Strategy Series by Parham Shariat",
     accentColor: "#7B7E3A",
     status: "published",
+    buyUrl: "https://a.co/d/06ZICS0y",
   },
   {
     slug: "38-letters-rockefeller-to-his-son",
@@ -59,6 +60,7 @@ export const AUTHORED_BOOKS: AuthoredBook[] = [
       "The 38 Letters of Rockefeller to His Son, with Author's Reflections — Book 2, The Business Strategy Series by Parham Shariat",
     accentColor: "#D41F1F",
     status: "published",
+    buyUrl: "https://a.co/d/0fn0IsW0",
   },
   {
     slug: "six-ways-to-make-a-seven",
@@ -77,6 +79,7 @@ export const AUTHORED_BOOKS: AuthoredBook[] = [
       "Six Ways to Make a Seven, Knowing When To Walk Away — Book 3, The Business Strategy Series by Parham Shariat",
     accentColor: "#111111",
     status: "published",
+    buyUrl: "https://a.co/d/05SuijSX",
   },
   {
     slug: "digital-real-estate",
@@ -95,6 +98,7 @@ export const AUTHORED_BOOKS: AuthoredBook[] = [
       "Digital Real Estate, How to Own More Space on the Internet — Book 4, The Business Strategy Series by Parham Shariat",
     accentColor: "#8C1AB9",
     status: "published",
+    buyUrl: "https://a.co/d/0bWodSlz",
   },
   {
     slug: "complete-guide-to-dominating-ai-search",
@@ -113,6 +117,7 @@ export const AUTHORED_BOOKS: AuthoredBook[] = [
       "The Complete Guide to Dominating AI Search — A Proven Framework for Getting Your Business Recommended by AI Search Engines through Generative Engine Optimization, by Parham Shariat",
     accentColor: "#1F3A93",
     status: "published",
+    buyUrl: "https://a.co/d/09HocT4Z",
   },
 ];
 
