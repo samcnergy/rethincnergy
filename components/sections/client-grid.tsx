@@ -44,7 +44,7 @@ export function ClientGrid({ campaign = "home" }: { campaign?: string }) {
                   <a
                     href={clientUtmUrl(c, campaign)}
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-copper-600 hover:text-copper-700"
                   >
                     Visit {c.domain}

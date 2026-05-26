@@ -90,7 +90,7 @@ export default function ProductsPage() {
                         <a
                           href={productUtmUrl(p, "products")}
                           target="_blank"
-                          rel="noopener"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
                         >
                           Visit site <ArrowUpRight className="size-4" />

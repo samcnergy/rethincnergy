@@ -197,7 +197,7 @@ export default function BooksPage() {
                             <a
                               href={book.buyUrl}
                               target="_blank"
-                              rel="noopener nofollow"
+                              rel="noopener noreferrer nofollow"
                               aria-label={`Buy ${book.title} on Amazon`}
                             >
                               Buy on Amazon <ArrowUpRight className="size-4" />

@@ -74,7 +74,7 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
             ) : (
               <>
                 <Button asChild size="lg" variant="accent">
-                  <a href={productUtmUrl(p, "detail")} target="_blank" rel="noopener">
+                  <a href={productUtmUrl(p, "detail")} target="_blank" rel="noopener noreferrer">
                     Visit {p.domain} <ArrowUpRight className="size-4" />
                   </a>
                 </Button>

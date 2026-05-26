@@ -58,7 +58,7 @@ export function ClientDetail({ client: c }: ClientDetailProps) {
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">{c.tagline}</p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" variant="accent">
-              <a href={clientUtmUrl(c, "detail")} target="_blank" rel="noopener">
+              <a href={clientUtmUrl(c, "detail")} target="_blank" rel="noopener noreferrer">
                 Visit {c.domain} <ArrowUpRight className="size-4" />
               </a>
             </Button>

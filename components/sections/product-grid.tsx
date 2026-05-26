@@ -66,7 +66,7 @@ export function ProductGrid({ campaign = "home" }: { campaign?: string }) {
                     <a
                       href={productUtmUrl(p, campaign)}
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-sm font-medium text-copper-300 hover:text-copper-200"
                     >
                       Visit {p.domain}

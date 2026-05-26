@@ -75,7 +75,7 @@ export default function ClientsPage() {
                       <a
                         href={clientUtmUrl(c, "clients-list")}
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
                       >
                         Visit site <ArrowUpRight className="size-4" />
