@@ -10,7 +10,7 @@ export const SITE_DESCRIPTION =
 // Freshness signal — bumped every release. AI answer engines weight recently
 // reviewed content; surfacing this in page copy and schema is a direct
 // response to the "freshness_and_recency" module of the GEO audit.
-export const SITE_LAST_UPDATED = "2026-04-23";
+export const SITE_LAST_UPDATED = "2026-07-01";
 
 export const SITE_CONTACT = {
   email: "parham@rethinkcnergy.com",
