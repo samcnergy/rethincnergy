@@ -50,18 +50,6 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },
-  async redirects() {
-    return [
-      {
-        // 301 redirect every www path to the apex domain — prevents GSC
-        // "Alternate page with proper canonical tag" warnings from www crawls
-        source: "/:path*",
-        has: [{ type: "host", value: "www.rethinkcnergy.com" }],
-        destination: "https://rethinkcnergy.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
   async headers() {
     return [
       {
