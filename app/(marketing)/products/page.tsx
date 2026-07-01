@@ -55,8 +55,75 @@ export default function ProductsPage() {
 
       <section aria-label="All products" className="py-24 lg:py-32">
         <Container>
+          {/* Group 1 — AI Search Visibility Project */}
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] text-copper-600">
+              AI Search Visibility Project
+            </p>
+            <ul className="mt-8 grid gap-8">
+              {PRODUCTS.filter((p) =>
+                ["sitemarketing", "powerfulblueprints"].includes(p.slug)
+              ).map((p) => (
+                <li key={p.slug}>
+                  <article className="group grid gap-8 rounded-lg border border-sand-200 bg-card p-8 transition-colors hover:border-copper-400 lg:grid-cols-12 lg:p-10">
+                    <div className="min-w-0 lg:col-span-4">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge variant="outline" className="w-fit border-copper-400 text-copper-600">
+                          {p.category}
+                        </Badge>
+                      </div>
+                      <h2 className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">{p.name}</h2>
+                      <p className="mt-2 text-sm text-ink-400">{p.domain}</p>
+                      <div className="mt-6 flex flex-wrap items-center gap-4">
+                        <Link
+                          href={`/products/${p.slug}`}
+                          className="inline-flex items-center gap-1 text-sm font-medium text-ink-800 hover:text-copper-600"
+                        >
+                          Learn more <ArrowRight className="size-4" />
+                        </Link>
+                        <a
+                          href={productUtmUrl(p, "products")}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-sm font-medium text-copper-600 hover:text-copper-700"
+                        >
+                          Visit site <ArrowUpRight className="size-4" />
+                        </a>
+                      </div>
+                    </div>
+                    <div className="min-w-0 space-y-5 text-base leading-relaxed text-ink-600 lg:col-span-8">
+                      <p className="font-serif text-xl text-ink-800">{p.tagline}</p>
+                      <p>{p.description}</p>
+                      <dl className="grid gap-5 border-t border-sand-200 pt-5 sm:grid-cols-3">
+                        <div>
+                          <dt className="text-xs uppercase tracking-wider text-copper-600">Who</dt>
+                          <dd className="mt-1 text-sm text-ink-600">{p.who}</dd>
+                        </div>
+                        <div className="sm:col-span-2">
+                          <dt className="text-xs uppercase tracking-wider text-copper-600">
+                            What&apos;s included
+                          </dt>
+                          <dd
+                            className="mt-1 text-sm text-ink-600"
+                            dangerouslySetInnerHTML={{ __html: p.what }}
+                          />
+                        </div>
+                      </dl>
+                    </div>
+                  </article>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Visual separator between product groups */}
+          <div className="my-16 border-t border-sand-200" aria-hidden />
+
+          {/* Group 2 — AloHelp + Brain.Gritiva */}
           <ul className="grid gap-8">
-            {PRODUCTS.map((p) => (
+            {PRODUCTS.filter((p) =>
+              ["alohelp", "braingritiva"].includes(p.slug)
+            ).map((p) => (
               <li key={p.slug}>
                 <article className="group grid gap-8 rounded-lg border border-sand-200 bg-card p-8 transition-colors hover:border-copper-400 lg:grid-cols-12 lg:p-10">
                   <div className="min-w-0 lg:col-span-4">
@@ -110,7 +177,10 @@ export default function ProductsPage() {
                         <dt className="text-xs uppercase tracking-wider text-copper-600">
                           What&apos;s included
                         </dt>
-                        <dd className="mt-1 text-sm text-ink-600">{p.what}</dd>
+                        <dd
+                          className="mt-1 text-sm text-ink-600"
+                          dangerouslySetInnerHTML={{ __html: p.what }}
+                        />
                       </div>
                     </dl>
                   </div>
