@@ -135,7 +135,7 @@ export default function AloHelpPage() {
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-500">
             Trained on the Autism Brain Imaging Data Exchange (ABIDE) — 1,008 subjects
-            across 19 international research sites — AutismRI's performance exceeds the
+            across 19 international research sites — AutismRI&rsquo;s performance exceeds the
             behavioral assessment benchmark on every metric.
           </p>
 
