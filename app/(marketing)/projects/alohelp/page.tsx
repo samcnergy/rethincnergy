@@ -7,9 +7,9 @@ import { buildMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/utils";
 
 export const metadata = buildMetadata({
-  title: "AloHelp — Healthcare AI Diagnostics",
+  title: "AutismRI — AI Diagnostics for Autism Spectrum Disorder",
   description:
-    "AloHelp is Rethink Cnergy's clinical-grade AI diagnostic platform. First module: AutismRI — autism spectrum disorder detection via MRI with 86% sensitivity and 89% specificity. FDA De Novo pathway.",
+    "AutismRI is Rethink Cnergy's clinical-grade AI diagnostic module — autism spectrum disorder detection via MRI with 86% sensitivity and 89% specificity. Currently in development.",
   path: "/projects/alohelp",
 });
 
@@ -43,7 +43,7 @@ const BREADCRUMB_JSONLD = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
     { "@type": "ListItem", position: 2, name: "Projects", item: absoluteUrl("/projects") },
-    { "@type": "ListItem", position: 3, name: "AloHelp", item: absoluteUrl("/projects/alohelp") },
+    { "@type": "ListItem", position: 3, name: "AutismRI", item: absoluteUrl("/projects/alohelp") },
   ],
 };
 
@@ -59,7 +59,7 @@ export default function AloHelpPage() {
             id="alohelp-heading"
             className="mt-6 max-w-4xl font-serif text-5xl leading-[1.1] text-ink-800 sm:text-6xl lg:text-7xl"
           >
-            AloHelp
+            AutismRI
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">
             Clinical-grade AI diagnostics for neurological conditions. First module:
@@ -70,11 +70,11 @@ export default function AloHelpPage() {
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-sand-200 pt-10 sm:grid-cols-4">
             <div>
               <dt className="text-xs font-medium uppercase tracking-wider text-copper-600">Status</dt>
-              <dd className="mt-1 text-base font-medium text-ink-800">FDA De Novo pathway</dd>
+              <dd className="mt-1 text-base font-medium text-ink-800">In development</dd>
             </div>
             <div>
               <dt className="text-xs font-medium uppercase tracking-wider text-copper-600">Seeking</dt>
-              <dd className="mt-1 text-base font-medium text-ink-800">$2M Series A</dd>
+              <dd className="mt-1 text-base font-medium text-ink-800">$500K</dd>
             </div>
             <div>
               <dt className="text-xs font-medium uppercase tracking-wider text-copper-600">Market</dt>
@@ -211,51 +211,6 @@ export default function AloHelpPage() {
         </Container>
       </section>
 
-      {/* FDA pathway */}
-      <section aria-labelledby="fda-heading" className="bg-ink-800 py-24 text-sand-50 lg:py-32">
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <p className="text-xs uppercase tracking-[0.22em] text-copper-300">
-                Regulatory pathway
-              </p>
-              <h2 id="fda-heading" className="mt-4 font-serif text-3xl text-sand-50 sm:text-4xl">
-                FDA De Novo Classification
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-ink-200">
-                No prior FDA-cleared MRI-based autism diagnostic device exists.
-                AutismRI is establishing the category — and becoming the first-mover
-                predicate for future devices.
-              </p>
-              <p className="mt-4 text-sm text-ink-300">
-                Regulatory advisor: Ken Block Consulting (KBC) — specialists in FDA
-                medical device strategy and De Novo submissions.
-              </p>
-            </div>
-
-            <div className="lg:col-span-8">
-              <ol className="space-y-6">
-                {[
-                  { date: "Q3 2025", title: "Pre-submission meeting (Q-Sub)", detail: "Confirm De Novo pathway appropriateness, validate test plan, receive FDA feedback on clinical study design." },
-                  { date: "2026", title: "Full De Novo Submission", detail: "Clinical performance data, software documentation, cybersecurity protocols, risk analysis per ISO 14971, HIPAA documentation." },
-                  { date: "2027", title: "Anticipated FDA De Novo Authorization", detail: "Establishes AutismRI as Class II device. Opens reimbursement pathway (CPT coding, insurance coverage). Series A milestone." },
-                ].map((step, i) => (
-                  <li key={i} className="flex gap-6">
-                    <div className="shrink-0 text-right w-16">
-                      <span className="text-xs font-medium text-copper-300">{step.date}</span>
-                    </div>
-                    <div className="border-l border-copper-700 pl-6">
-                      <h3 className="font-medium text-sand-50">{step.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-ink-300">{step.detail}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </div>
-        </Container>
-      </section>
-
       {/* Platform roadmap */}
       <section aria-labelledby="roadmap-heading" className="py-24 lg:py-32">
         <Container>
@@ -296,23 +251,23 @@ export default function AloHelpPage() {
             Investment
           </p>
           <h2 id="alohelp-invest-heading" className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">
-            Series A · $2M
+            Pre-seed · $500K
           </h2>
           <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-600">
             <p>
-              Capital will fund the FDA De Novo clinical study and submission, pilot
-              deployments with partner clinics, and team expansion (medical affairs,
-              sales, regulatory).
+              Capital will fund continued platform development, pilot deployments
+              with partner clinics, and team expansion (medical affairs, clinical
+              partnerships, engineering).
             </p>
             <p>
               Business model: SaaS subscription for clinics and hospital systems —
-              per-seat or per-scan pricing, post-FDA clearance in 2027. Expansion
-              modules (ADHD, Alzheimer&rsquo;s) add additional revenue streams on the
-              same infrastructure.
+              per-seat or per-scan pricing. Expansion modules (ADHD,
+              Alzheimer&rsquo;s) add additional revenue streams on the same
+              infrastructure.
             </p>
             <p>
-              Path to profitability: 2027–2028, following FDA clearance and initial
-              clinic deployments.
+              Path to profitability: 2027–2028, following initial clinic deployments
+              and continued development milestones.
             </p>
           </div>
           <div className="mt-8">
@@ -320,7 +275,7 @@ export default function AloHelpPage() {
               href="/contact"
               className="inline-flex items-center gap-2 text-sm font-medium text-copper-600 hover:text-copper-700"
             >
-              Inquire about AloHelp →
+              Inquire about AutismRI →
             </Link>
           </div>
         </Container>
@@ -328,8 +283,8 @@ export default function AloHelpPage() {
 
       <CtaBlock
         eyebrow="Clinical partnerships"
-        heading="We&rsquo;re seeking clinic partners for the FDA De Novo clearance pathway."
-        body="If your practice is interested in piloting AutismRI, or if you&rsquo;re evaluating the AloHelp platform for a healthcare investment, we&rsquo;d like to hear from you."
+        heading="Interested in piloting AutismRI at your practice?"
+        body="If your clinic works in pediatric neurology, child psychiatry, or radiology and you&rsquo;re interested in evaluating an MRI-based autism diagnostic aid — or if you&rsquo;re looking at AutismRI as a healthcare investment — we&rsquo;d like to hear from you."
         primaryLabel="Start the conversation"
         secondaryHref="/projects"
         secondaryLabel="View all projects"

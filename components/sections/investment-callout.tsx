@@ -5,9 +5,9 @@ import { SITE_CONTACT } from "@/lib/seo";
 
 const OPPORTUNITIES = [
   {
-    project: "AloHelp",
-    ask: "$2M Series A",
-    use: "FDA clearance + pilot deployments + team expansion",
+    project: "AutismRI",
+    ask: "$500K",
+    use: "Platform development, pilot deployments, and team expansion",
     profitability: "2027–2028",
     href: "/projects/alohelp",
   },

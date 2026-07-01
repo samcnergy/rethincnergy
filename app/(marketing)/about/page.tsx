@@ -78,7 +78,7 @@ export default function AboutPage() {
               <p>
                 We started with strategy and software consulting, then built our own LLM.
                 Today Rethink Cnergy is an AI venture studio running three self-funded
-                projects — AloHelp (clinical AI diagnostics on the FDA De Novo pathway),
+                projects — AutismRI (clinical AI diagnostics, currently in development),
                 the AI Search Optimization platform (GEO for local professionals), and
                 Gritiva AI Brain (the proprietary LLM infrastructure that powers both) —
                 and builds custom AI platforms for a small number of qualified external

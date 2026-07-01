@@ -16,12 +16,12 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     slug: "alohelp",
-    name: "AloHelp",
-    shortName: "AloHelp",
+    name: "AutismRI",
+    shortName: "AutismRI",
     tagline:
       "Healthcare AI diagnostics. AutismRI: autism spectrum disorder detection via MRI.",
-    status: "FDA De Novo pathway",
-    seeking: "Series A · $2M",
+    status: "In development",
+    seeking: "Pre-seed · $500K",
     pathToProfitability: "2027–2028",
     market: "$4B+ healthcare AI diagnostics",
     businessModel: "SaaS for clinics and hospitals",
@@ -31,8 +31,8 @@ export const PROJECTS: Project[] = [
       "Trained on ABIDE dataset — 1,008 subjects, 19 international research sites",
       "86% sensitivity, 89% specificity vs. ADOS-2 gold standard",
       "Grad-CAM explainability — clinicians see which brain regions drove the result",
-      "FDA De Novo Class II pathway · Ken Block Consulting (KBC) regulatory advisor",
       "HIPAA-aligned cloud API · Clinician reporting in seconds",
+      "Platform architecture supports ADHD and Alzheimer's modules",
     ],
     href: "/projects/alohelp",
   },

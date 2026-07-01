@@ -68,7 +68,7 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
                   </Link>
                 </Button>
                 <Badge variant="secondary" className="h-11 rounded-md px-4 text-sm">
-                  Pre-launch · Pursuing FDA De Novo clearance
+                  In development
                 </Badge>
               </>
             ) : (
@@ -144,7 +144,7 @@ export function ProductDetail({ product: p }: ProductDetailProps) {
         <CtaBlock
           eyebrow={`${p.name} · Pre-launch`}
           heading="Clinical partners and pilot sites — we&rsquo;d like to talk."
-          body="AloHelp is pre-launch and pursuing FDA De Novo clearance. If you run a pediatric neurology, child psychiatry, or radiology practice and want to evaluate an MRI-based autism diagnostic aid, reach out."
+          body="AutismRI is in active development. If you run a pediatric neurology, child psychiatry, or radiology practice and want to evaluate an MRI-based autism diagnostic aid, reach out."
           primaryLabel="Request a demo"
           secondaryHref="/services"
           secondaryLabel="See services"
