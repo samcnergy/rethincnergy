@@ -1,40 +1,43 @@
-import { Brain, Search, Code2, Mic } from "lucide-react";
+import Link from "next/link";
+import { Cpu, Code2, Mic, Search } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/forms/contact-form";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/utils";
+import { CLIENTS } from "@/lib/clients";
 
 export const metadata = buildMetadata({
-  title: "Services",
+  title: "Services — Custom AI Platform Development",
   description:
-    "AI strategy, GEO/AEO readiness, custom AI builds, and speaking engagements from ReTHINK CNERGY. Built for small and mid-sized businesses ready to invest in getting it right.",
+    "Rethink Cnergy builds custom AI platforms for external clients: architecture design, Gritiva AI Brain integration, custom training, and local or hybrid deployment. Fixed-scope engagements.",
   path: "/services",
 });
 
 const SERVICES = [
   {
-    icon: Brain,
-    name: "AI Strategy & Advisory",
+    icon: Cpu,
+    name: "Custom AI Platform Development",
     problem:
-      "You need a senior strategic operator in the room — just not a full-time one on the payroll.",
-    who: "Founders, CEOs, and boards of 10–200 person businesses.",
+      "You need bespoke AI infrastructure — not a generic SaaS wrapper or a DIY model project with no support.",
+    who: "Founders, enterprises, and qualified clients with a specific product or internal workflow that requires specialized AI.",
     deliverables: [
-      "Fractional Chief Strategy Officer engagements",
-      "Board and investor advisory",
-      "Quarterly strategy reviews and operating plans",
-      "Succession and M&A preparation",
+      "Architecture design + AI infrastructure planning",
+      "Gritiva AI Brain integration (or your own LLM)",
+      "Custom data pipeline + domain-specific fine-tuning",
+      "Local, hybrid, or cloud deployment",
+      "Handover documentation + ongoing support",
     ],
     shape:
-      "Typical engagement runs 3–12 months. Monthly retainer with quarterly deliverables and on-call access for time-sensitive decisions.",
+      "Fixed-scope, milestone-based engagement. We scope small first to prove the premise, then build. Typical engagement: 2–4 weeks prototype, followed by production build.",
   },
   {
     icon: Search,
     name: "GEO / AEO Readiness",
     problem:
       "AI answer engines are reshaping discovery. Your site needs to be quotable, structured, and citeable — now.",
-    who: "Content-heavy sites, e-commerce operators, and services businesses that depend on organic discovery.",
+    who: "Content-heavy sites, e-commerce operators, and professional services firms that depend on organic discovery.",
     deliverables: [
       "GRI™ (GEO Readiness Index) audit and scoring",
       "Structured data and schema implementation",
@@ -47,27 +50,27 @@ const SERVICES = [
   },
   {
     icon: Code2,
-    name: "Custom AI Builds",
+    name: "AI Strategy & Advisory",
     problem:
-      "Off-the-shelf tools don&rsquo;t fit your workflow. You need bespoke software that earns its keep.",
-    who: "Qualified clients with a specific internal workflow or customer-facing product.",
+      "You need a senior strategic operator in the room — just not a full-time one on the payroll.",
+    who: "Founders, CEOs, and boards of 10–200 person businesses navigating AI strategy and infrastructure decisions.",
     deliverables: [
-      "Scoped prototype in 2–4 weeks",
-      "Production system with documentation",
-      "Handover training and runbooks",
-      "Optional ongoing support",
+      "Fractional Chief Strategy Officer engagements",
+      "Board and investor advisory",
+      "Quarterly strategy reviews and operating plans",
+      "AI infrastructure and LLM evaluation",
     ],
     shape:
-      "Fixed-scope, milestone-based engagement. We scope small first to prove the premise, then build.",
+      "Typical engagement runs 3–12 months. Monthly retainer with quarterly deliverables and on-call access for time-sensitive decisions.",
   },
   {
     icon: Mic,
     name: "Speaking & Workshops",
     problem:
-      "Your team, association, or conference needs a credible voice on AI strategy and GEO — not another vendor pitch.",
+      "Your team, association, or conference needs a credible voice on AI strategy, GEO, and venture studio models — not another vendor pitch.",
     who: "Industry associations, executive teams, and conferences.",
     deliverables: [
-      "Keynotes on AI strategy and the Grand Recalibration",
+      "Keynotes on AI strategy and the venture studio model",
       "Half-day workshops on GEO readiness",
       "Private executive briefings",
     ],
@@ -112,11 +115,12 @@ export default function ServicesPage() {
             id="services-heading"
             className="mt-6 max-w-4xl font-serif text-5xl leading-[1.1] text-ink-800 sm:text-6xl lg:text-7xl"
           >
-            Who do we work with?
+            Custom AI platform development.
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-500 sm:text-xl">
-            Small businesses that need to jump-start their business using technology —
-            and want a partner who can think strategically and ship.
+            Beyond our venture projects, we build specialized AI platforms for external
+            clients based on their specific requirements. Architecture, Gritiva AI Brain
+            integration, custom training, and deployment — fixed-scope engagements.
           </p>
         </Container>
       </section>
@@ -171,6 +175,80 @@ export default function ServicesPage() {
               );
             })}
           </ul>
+        </Container>
+      </section>
+
+      {/* Client work examples */}
+      <section aria-labelledby="client-work-heading" className="bg-sand-100 py-24 lg:py-32">
+        <Container>
+          <p className="text-xs uppercase tracking-[0.22em] text-copper-600">
+            Recent platform work
+          </p>
+          <h2
+            id="client-work-heading"
+            className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl"
+          >
+            Platforms we&rsquo;ve built
+          </h2>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-500">
+            Custom AI platforms built for external clients across healthcare, legal,
+            luxury, and construction.
+          </p>
+
+          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {CLIENTS.map((client) => (
+              <li key={client.slug}>
+                <article className="flex h-full flex-col rounded-lg border border-sand-200 bg-card p-6">
+                  <h3 className="font-serif text-xl text-ink-800">{client.name}</h3>
+                  <p className="mt-1 text-xs font-medium uppercase tracking-wider text-copper-600">
+                    {client.industry}
+                  </p>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-500">
+                    {client.engagement}
+                  </p>
+                  <div className="mt-4">
+                    <a
+                      href={client.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-medium text-copper-600 hover:text-copper-700"
+                    >
+                      Visit {client.domain} →
+                    </a>
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      {/* Gritiva callout */}
+      <section aria-labelledby="gritiva-services-heading" className="py-24 lg:py-32">
+        <Container size="narrow">
+          <p className="text-xs uppercase tracking-[0.22em] text-copper-600">
+            Infrastructure
+          </p>
+          <h2
+            id="gritiva-services-heading"
+            className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl"
+          >
+            Every build runs on Gritiva — or yours
+          </h2>
+          <p className="mt-5 text-base leading-relaxed text-ink-500">
+            We integrate Gritiva AI Brain into client platforms when it&rsquo;s the right
+            fit — domain-specific training, local deployment, HIPAA-ready, no per-query
+            costs. If your project requires a different LLM or existing infrastructure,
+            we work with that too.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/gritiva"
+              className="inline-flex items-center gap-2 text-sm font-medium text-copper-600 hover:text-copper-700"
+            >
+              Learn about Gritiva AI Brain →
+            </Link>
+          </div>
         </Container>
       </section>
 

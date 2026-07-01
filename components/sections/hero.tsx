@@ -29,7 +29,7 @@ export function Hero() {
         <Reveal>
           <p className="flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-copper-600">
             <span className="h-px w-10 bg-copper-500" aria-hidden />
-            AI strategy · GEO readiness · Production software
+            AI venture studio · Proprietary AI Brain · Three active projects
           </p>
         </Reveal>
         <Reveal delay={0.05}>
@@ -37,25 +37,25 @@ export function Hero() {
             id="hero-heading"
             className="mt-6 max-w-4xl text-balance font-serif text-5xl leading-[1.05] text-ink-800 sm:text-6xl lg:text-7xl xl:text-[88px]"
           >
-            Rethink how your business operates in the age of AI.
+            We launch and scale AI companies. Every project runs on Gritiva.
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-7 max-w-2xl text-balance text-lg leading-relaxed text-ink-500 sm:text-xl">
-            ReTHINK CNERGY is an innovative tech strategy firm building software and
-            advisory for small businesses. Twenty-plus years of international operating
-            experience, paired with modern AI and GEO expertise.
+            Rethink Cnergy is an AI venture studio. We build, self-fund, and scale
+            AI-powered companies. Gritiva AI Brain is the proprietary infrastructure
+            that powers every project.
           </p>
         </Reveal>
         <Reveal delay={0.15}>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
-              <Link href="/contact">
-                Book a strategy call <ArrowRight className="size-4" />
+              <Link href="/projects">
+                Explore our projects <ArrowRight className="size-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/products">Explore our products</Link>
+              <Link href="/contact">Book a strategy call</Link>
             </Button>
           </div>
         </Reveal>

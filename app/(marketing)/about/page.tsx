@@ -7,7 +7,7 @@ import { absoluteUrl } from "@/lib/utils";
 export const metadata = buildMetadata({
   title: "About ReTHINK CNERGY",
   description:
-    "ReTHINK CNERGY is a boutique AI strategy and software firm founded in 2021 by Parham Shariat and Mohammad Salamati in Orange County, California.",
+    "Rethink Cnergy is an AI venture studio founded in 2021 by Parham Shariat and Mohammad Salamati. We launch and scale AI-powered companies using Gritiva AI Brain — our proprietary LLM infrastructure.",
   path: "/about",
 });
 
@@ -51,10 +51,10 @@ export default function AboutPage() {
             Substance over hype. Execution over promises.
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-ink-500">
-            ReTHINK CNERGY is a boutique strategy and software firm founded in 2021 in
-            Orange County, California. We work with a small number of clients each year —
-            founders and operators who are ready to invest in getting it right, not just
-            getting it done.
+            Rethink Cnergy is an AI venture studio founded in 2021 in Orange County,
+            California. We launch, self-fund, and scale AI-powered companies using
+            Gritiva AI Brain — our proprietary LLM infrastructure. We also build custom
+            AI platforms for a small number of qualified external clients.
           </p>
         </Container>
       </section>
@@ -70,23 +70,24 @@ export default function AboutPage() {
             <div className="space-y-5 text-base leading-relaxed text-ink-600 lg:col-span-8">
               <p>
                 The firm was founded on October 25, 2021 by Parham Shariat and Mohammad
-                Salamati around a simple idea: small businesses are the backbone of the
-                economy, and they deserve the same quality of strategic thinking that
-                large companies reserve for themselves.
+                Salamati around a simple conviction: the most important AI question isn&rsquo;t
+                which third-party model to use — it&rsquo;s whether you have the infrastructure
+                to train on your own domain, deploy without API dependency, and compound
+                that advantage over time.
               </p>
               <p>
-                We started with marketing audits, then expanded into software. Today
-                ReTHINK CNERGY runs four of its own products — SiteMarketing.ai for
-                AI-driven marketing strategy, AloHelp (AI-driven Software as a Medical
-                Device for autism diagnosis), Brain.Gritiva for AI agent orchestration,
-                and Powerful Blueprints for long-form career storytelling — and advises a
-                small number of independent client firms on strategy, GEO readiness, and
-                content systems.
+                We started with strategy and software consulting, then built our own LLM.
+                Today Rethink Cnergy is an AI venture studio running three self-funded
+                projects — AloHelp (clinical AI diagnostics on the FDA De Novo pathway),
+                the AI Search Optimization platform (GEO for local professionals), and
+                Gritiva AI Brain (the proprietary LLM infrastructure that powers both) —
+                and builds custom AI platforms for a small number of qualified external
+                clients.
               </p>
               <p>
                 We believe in substance over hype, execution over promises, and building
-                real value that lasts. That belief shapes who we work with, what we ship,
-                and how we talk about our work.
+                real value that lasts. That belief shapes what we launch, who we work
+                with, and how we talk about what we&rsquo;re building.
               </p>
             </div>
           </div>

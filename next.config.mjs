@@ -59,6 +59,19 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // Products → Projects (permanent 301)
+      { source: "/products", destination: "/projects", permanent: true },
+      { source: "/products/alohelp", destination: "/projects/alohelp", permanent: true },
+      { source: "/products/braingritiva", destination: "/gritiva", permanent: true },
+      { source: "/products/sitemarketing", destination: "/projects/ai-search-optimization", permanent: true },
+      { source: "/products/powerfulblueprints", destination: "/projects/ai-search-optimization", permanent: true },
+      // Clients → Services (permanent 301)
+      { source: "/clients", destination: "/services", permanent: true },
+      { source: "/clients/:path*", destination: "/services", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

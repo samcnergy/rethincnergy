@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/container";
 import { BrandMark } from "@/components/layout/brand-mark";
-import { PRODUCTS } from "@/lib/products";
-import { CLIENTS } from "@/lib/clients";
+import { PROJECTS } from "@/lib/projects";
 import { SITE_CONTACT, SITE_LAST_UPDATED } from "@/lib/seo";
 
 const YEAR = new Date().getFullYear();
@@ -22,8 +21,8 @@ export function SiteFooter() {
         <div className="lg:col-span-2">
           <BrandMark />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-500">
-            A California-based boutique firm helping small businesses rethink how they
-            operate, market, and grow in the age of AI.
+            An AI venture studio. We launch and scale AI-powered companies. Gritiva AI Brain
+            is the proprietary infrastructure that powers every project.
           </p>
           <address
             className="mt-5 space-y-1 not-italic text-xs text-ink-500"
@@ -51,6 +50,8 @@ export function SiteFooter() {
           <h4 className="mb-4 font-serif text-base text-ink-800">Company</h4>
           <ul className="space-y-3 text-ink-500">
             <li><Link href="/about" className="hover:text-copper-600">About</Link></li>
+            <li><Link href="/projects" className="hover:text-copper-600">Projects</Link></li>
+            <li><Link href="/gritiva" className="hover:text-copper-600">Gritiva AI Brain</Link></li>
             <li><Link href="/services" className="hover:text-copper-600">Services</Link></li>
             <li><Link href="/books" className="hover:text-copper-600">Books</Link></li>
             <li><Link href="/insights" className="hover:text-copper-600">Insights</Link></li>
@@ -58,34 +59,33 @@ export function SiteFooter() {
             <li><Link href="/contact" className="hover:text-copper-600">Contact</Link></li>
           </ul>
         </nav>
-        <nav aria-label="Products" className="text-sm">
-          <h4 className="mb-4 font-serif text-base text-ink-800">Products</h4>
+        <nav aria-label="Projects" className="text-sm">
+          <h4 className="mb-4 font-serif text-base text-ink-800">Projects</h4>
           <ul className="space-y-3 text-ink-500">
-            {PRODUCTS.map((p) => (
+            {PROJECTS.map((p) => (
               <li key={p.slug}>
-                <Link
-                  href={`/products/${p.slug}`}
-                  className="hover:text-copper-600"
-                >
+                <Link href={p.href} className="hover:text-copper-600">
                   {p.name}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <nav aria-label="Clients" className="text-sm">
-          <h4 className="mb-4 font-serif text-base text-ink-800">Clients</h4>
+        <nav aria-label="Gritiva platform" className="text-sm">
+          <h4 className="mb-4 font-serif text-base text-ink-800">Gritiva</h4>
           <ul className="space-y-3 text-ink-500">
-            {CLIENTS.map((c) => (
-              <li key={c.slug}>
-                <Link
-                  href={`/clients/${c.slug}`}
-                  className="hover:text-copper-600"
-                >
-                  {c.name}
-                </Link>
-              </li>
-            ))}
+            <li><Link href="/gritiva" className="hover:text-copper-600">What is Gritiva?</Link></li>
+            <li><Link href="/gritiva#deployment" className="hover:text-copper-600">Deployment options</Link></li>
+            <li><Link href="/gritiva#pricing" className="hover:text-copper-600">Pricing</Link></li>
+            <li><Link href="/services" className="hover:text-copper-600">Custom platform builds</Link></li>
+            <li>
+              <a
+                href={`mailto:${SITE_CONTACT.email}`}
+                className="hover:text-copper-600"
+              >
+                Partner with us
+              </a>
+            </li>
           </ul>
         </nav>
       </Container>
