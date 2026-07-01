@@ -53,53 +53,6 @@ const DEPLOYMENT_OPTIONS = [
   },
 ];
 
-const PRICING_TIERS = [
-  {
-    name: "Startup",
-    price: "$500/month",
-    model: "Gritiva Small (7B parameters)",
-    includes: [
-      "Up to 100K tokens/month inference",
-      "Managed SaaS hosting",
-      "Email support",
-    ],
-  },
-  {
-    name: "Growth",
-    price: "$2,000/month",
-    model: "Gritiva Medium (13B parameters)",
-    includes: [
-      "Unlimited inference (managed infrastructure)",
-      "Domain-specific fine-tuning (1 domain)",
-      "Hybrid deployment option",
-      "Priority support",
-    ],
-  },
-  {
-    name: "Enterprise",
-    price: "$10K–$50K/year",
-    model: "Gritiva Large (70B parameters)",
-    includes: [
-      "Unlimited inference on your infrastructure",
-      "Custom fine-tuning (multiple domains)",
-      "On-premise deployment",
-      "HIPAA/SOC 2 compliance verification",
-      "24/7 support + dedicated account manager",
-    ],
-  },
-  {
-    name: "White-Label",
-    price: "Custom",
-    model: "Full white-label model",
-    includes: [
-      "Revenue-sharing or revenue-based pricing",
-      "Co-marketing support",
-      "Technical integration support",
-      "Managed infrastructure",
-    ],
-  },
-];
-
 const COMPARISON = [
   { factor: "Cost model", gritiva: "Fixed annual license", chatgpt: "Per-query API", claude: "Per-query API", opensource: "Free (self-hosted)" },
   { factor: "Domain specialization", gritiva: "Fine-tune on your data", chatgpt: "General training only", claude: "General training only", opensource: "Fine-tune yourself" },
@@ -143,8 +96,8 @@ export default function GritivaPage() {
               <dd className="mt-1 text-base font-medium text-ink-800">From day one</dd>
             </div>
             <div>
-              <dt className="text-xs font-medium uppercase tracking-wider text-copper-600">Pricing from</dt>
-              <dd className="mt-1 text-base font-medium text-ink-800">$500/month</dd>
+              <dt className="text-xs font-medium uppercase tracking-wider text-copper-600">Deployment</dt>
+              <dd className="mt-1 text-base font-medium text-ink-800">On-premise · Hybrid · SaaS</dd>
             </div>
           </dl>
         </Container>
@@ -285,42 +238,6 @@ export default function GritivaPage() {
               </article>
             ))}
           </div>
-        </Container>
-      </section>
-
-      {/* Pricing */}
-      <section id="pricing" aria-labelledby="pricing-heading" className="bg-ink-800 py-24 text-sand-50 lg:py-32">
-        <Container>
-          <p className="text-xs uppercase tracking-[0.22em] text-copper-300">
-            Pricing
-          </p>
-          <h2 id="pricing-heading" className="mt-4 font-serif text-3xl text-sand-50 sm:text-4xl">
-            Fixed cost. No per-query pricing.
-          </h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-200">
-            10,000 queries or 10 million — same licensing cost. The economics flip in
-            your favor the moment you exceed ~500 API queries/month.
-          </p>
-
-          <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {PRICING_TIERS.map((tier) => (
-              <li key={tier.name}>
-                <article className="flex h-full flex-col rounded-lg border border-white/10 bg-white/5 p-6">
-                  <h3 className="font-serif text-xl text-sand-50">{tier.name}</h3>
-                  <p className="mt-1 text-2xl font-serif text-copper-300">{tier.price}</p>
-                  <p className="mt-2 text-xs text-ink-300">{tier.model}</p>
-                  <ul className="mt-5 flex-1 space-y-2">
-                    {tier.includes.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-xs text-ink-300">
-                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-copper-400" aria-hidden />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              </li>
-            ))}
-          </ul>
         </Container>
       </section>
 
