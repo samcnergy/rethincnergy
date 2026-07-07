@@ -46,12 +46,12 @@ export const PROJECTS: Project[] = [
     seeking: "Seed / Series A",
     pathToProfitability: "2025–2026",
     market: "$1B+ GEO market · local professionals",
-    businessModel: "SaaS subscriptions · $500–$3K/month per client",
+    businessModel: "SaaS subscription · $49/month",
     description:
       "Two products, one mission: own your visibility in AI search. SiteMarketing.ai delivers a free AI Visibility Assessment then a monthly GEO retainer optimizing presence across ChatGPT, Perplexity, Gemini, and Google AI Overviews. Powerful Blueprints is the free publishing platform that feeds the funnel.",
     highlights: [
       "Free AI Visibility Assessment — scores website, social authority, LLM presence",
-      "Monthly GEO retainers · $500–$3K/month",
+      "$49/month SaaS subscription",
       "Citation monitoring across ChatGPT, Perplexity, and Gemini",
       "Powerful Blueprints: free AI-optimized content publishing platform",
       "Target: physicians, attorneys, real estate agents generating $1–5M/year",

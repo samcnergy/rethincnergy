@@ -32,7 +32,7 @@ const PRODUCTS = [
   {
     name: "SiteMarketing.ai",
     url: "https://sitemarketing.ai",
-    model: "Paid · $500–$3K/month GEO retainer",
+    model: "Paid · $49/month subscription",
     description:
       "GEO platform for local professionals. Starts with a free AI Visibility Assessment — scoring your website, social authority, and LLM presence across ChatGPT, Perplexity, Gemini, and Google AI Overviews — then delivers a monthly retainer roadmap optimizing your content for AI platform algorithms.",
     what: [
@@ -197,7 +197,7 @@ export default function AISearchOptimizationPage() {
               {[
                 {
                   term: "Revenue model",
-                  detail: "SaaS subscriptions via SiteMarketing.ai · $500–$3,000/month per client depending on market and scope",
+                  detail: "SaaS subscription via SiteMarketing.ai · $49/month",
                 },
                 {
                   term: "Free tier / funnel",
