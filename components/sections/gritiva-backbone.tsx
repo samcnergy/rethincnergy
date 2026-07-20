@@ -14,7 +14,7 @@ const WHY = [
   },
   {
     label: "Control",
-    body: "Gritiva runs on-premise or hybrid. Data stays inside your infrastructure. No dependency on third-party pricing changes, throttling, or API instability.",
+    body: "Our Private Language Model runs on-premise or hybrid. Data stays inside your infrastructure. No dependency on third-party pricing changes, throttling, or API instability.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function GritivaBackbone() {
                 id="gritiva-backbone-heading"
                 className="mt-4 font-serif text-4xl leading-tight text-sand-50 sm:text-5xl"
               >
-                Gritiva AI Brain
+                Private Language Model
               </h2>
               <p className="mt-5 text-base leading-relaxed text-ink-200">
                 Specialized AI that runs locally. No API dependency. No per-query costs.
@@ -49,7 +49,7 @@ export function GritivaBackbone() {
               <p className="mt-4 text-base leading-relaxed text-ink-300">
                 We built our own LLM because every domain problem requires
                 domain-specific training — and because API economics don&rsquo;t scale
-                for production applications. Gritiva is the infrastructure backbone
+                for production applications. Our Private Language Model is the infrastructure backbone
                 for every Rethink project, and available as a white-label offering for
                 external partners.
               </p>
@@ -57,7 +57,7 @@ export function GritivaBackbone() {
                 href="/gritiva"
                 className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-copper-300 hover:text-copper-200"
               >
-                Learn more about Gritiva <ArrowRight className="size-4" />
+                Learn more about Private Language Model <ArrowRight className="size-4" />
               </Link>
             </Reveal>
           </div>

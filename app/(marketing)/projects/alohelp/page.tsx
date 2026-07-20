@@ -116,7 +116,7 @@ export default function AloHelpPage() {
               </p>
               <p>
                 AloHelp is a platform, not a single product. Each module uses the same
-                standardized MRI workflow and Gritiva AI Brain infrastructure —
+                standardized MRI workflow and Private Language Model infrastructure —
                 enabling compounding clinical value as new conditions are added.
               </p>
             </div>
@@ -197,7 +197,7 @@ export default function AloHelpPage() {
                 { term: "Explainability", detail: "Grad-CAM heatmaps show which brain regions influenced each result — full transparency for clinicians" },
                 { term: "Speed", detail: "Comprehensive analysis and clinician report delivered in seconds" },
                 { term: "Compliance", detail: "HIPAA-aligned cloud API · Data encryption in transit and at rest · Regulatory-grade documentation" },
-                { term: "Infrastructure", detail: "Gritiva AI Brain — domain-trained proprietary LLM running on-premise or hybrid" },
+                { term: "Infrastructure", detail: "Private Language Model — domain-trained proprietary LLM running on-premise or hybrid" },
               ].map((item) => (
                 <div key={item.term} className="border-t border-sand-200 pt-5">
                   <dt className="font-medium uppercase tracking-wider text-copper-600 text-xs">
@@ -221,7 +221,7 @@ export default function AloHelpPage() {
             AloHelp expands beyond autism
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-500">
-            Each new module leverages the same Gritiva AI Brain infrastructure and
+            Each new module leverages the same Private Language Model infrastructure and
             MRI workflow. Clinicians who adopt AutismRI gain access to every future
             module without rebuilding their integration.
           </p>

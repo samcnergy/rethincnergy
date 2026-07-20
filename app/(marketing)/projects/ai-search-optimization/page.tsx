@@ -213,7 +213,7 @@ export default function AISearchOptimizationPage() {
                 },
                 {
                   term: "Underlying tech",
-                  detail: "Gritiva AI Brain trained on content, search algorithms, and LLM citation patterns — proprietary advantage vs. generic tools",
+                  detail: "Private Language Model trained on content, search algorithms, and LLM citation patterns — proprietary advantage vs. generic tools",
                 },
                 {
                   term: "Path to profitability",

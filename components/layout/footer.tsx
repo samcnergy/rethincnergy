@@ -21,7 +21,7 @@ export function SiteFooter() {
         <div className="lg:col-span-2">
           <BrandMark />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-500">
-            An AI venture studio. We launch and scale AI-powered companies. Gritiva AI Brain
+            An AI venture studio. We launch and scale AI-powered companies. Our Private Language Model
             is the proprietary infrastructure that powers every project.
           </p>
           <address
@@ -51,7 +51,7 @@ export function SiteFooter() {
           <ul className="space-y-3 text-ink-500">
             <li><Link href="/about" className="hover:text-copper-600">About</Link></li>
             <li><Link href="/projects" className="hover:text-copper-600">Projects</Link></li>
-            <li><Link href="/gritiva" className="hover:text-copper-600">Gritiva AI Brain</Link></li>
+            <li><Link href="/gritiva" className="hover:text-copper-600">Private Language Model</Link></li>
             <li><Link href="/services" className="hover:text-copper-600">Services</Link></li>
             <li><Link href="/books" className="hover:text-copper-600">Books</Link></li>
             <li><Link href="/insights" className="hover:text-copper-600">Insights</Link></li>
@@ -71,10 +71,10 @@ export function SiteFooter() {
             ))}
           </ul>
         </nav>
-        <nav aria-label="Gritiva platform" className="text-sm">
-          <h4 className="mb-4 font-serif text-base text-ink-800">Gritiva</h4>
+        <nav aria-label="Private Language Model" className="text-sm">
+          <h4 className="mb-4 font-serif text-base text-ink-800">Private LLM</h4>
           <ul className="space-y-3 text-ink-500">
-            <li><Link href="/gritiva" className="hover:text-copper-600">What is Gritiva?</Link></li>
+            <li><Link href="/gritiva" className="hover:text-copper-600">What is Private LLM?</Link></li>
             <li><Link href="/gritiva#deployment" className="hover:text-copper-600">Deployment options</Link></li>
             <li><Link href="/gritiva/private-llm" className="hover:text-copper-600">Private LLM</Link></li>
             <li><Link href="/services" className="hover:text-copper-600">Custom platform builds</Link></li>

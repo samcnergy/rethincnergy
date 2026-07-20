@@ -27,7 +27,7 @@ export function WhatWeDo() {
               We&apos;re launching and scaling three AI ventures.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ink-500">
-              Each project runs on Gritiva AI Brain — our proprietary LLM — and
+              Each project runs on our Private Language Model — proprietary LLM — and
               operates as its own business unit with a separate investment story.
             </p>
             <Link

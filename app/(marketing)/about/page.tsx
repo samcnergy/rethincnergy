@@ -7,7 +7,7 @@ import { absoluteUrl } from "@/lib/utils";
 export const metadata = buildMetadata({
   title: "About ReTHINK CNERGY",
   description:
-    "Rethink Cnergy is an AI venture studio founded in 2021 by Parham Shariat and Mohammad Salamati. We launch and scale AI-powered companies using Gritiva AI Brain — our proprietary LLM infrastructure.",
+    "Rethink Cnergy is an AI venture studio founded in 2021 by Parham Shariat and Mohammad Salamati. We launch and scale AI-powered companies using our proprietary Private Language Model infrastructure.",
   path: "/about",
 });
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-ink-500">
             Rethink Cnergy is an AI venture studio founded in 2021 in Orange County,
             California. We launch, self-fund, and scale AI-powered companies using
-            Gritiva AI Brain — our proprietary LLM infrastructure. We also build custom
+            our Private Language Model — proprietary LLM infrastructure. We also build custom
             AI platforms for a small number of qualified external clients.
           </p>
         </Container>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 Today Rethink Cnergy is an AI venture studio running three self-funded
                 projects — AutismRI (clinical AI diagnostics, currently in development),
                 the AI Search Optimization platform (GEO for local professionals), and
-                Gritiva AI Brain (the proprietary LLM infrastructure that powers both) —
+                a Private Language Model (the proprietary LLM infrastructure that powers both) —
                 and builds custom AI platforms for a small number of qualified external
                 clients.
               </p>

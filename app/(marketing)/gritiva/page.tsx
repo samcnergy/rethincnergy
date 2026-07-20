@@ -7,9 +7,9 @@ import { buildMetadata, SITE_CONTACT } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/utils";
 
 export const metadata = buildMetadata({
-  title: "Gritiva AI Brain — Proprietary LLM Infrastructure",
+  title: "Private Language Model — Proprietary LLM Infrastructure",
   description:
-    "Gritiva AI Brain is Rethink Cnergy's proprietary large language model. Specialized AI that runs locally — no API dependency, no per-query costs. Train on your domain. Deploy anywhere.",
+    "Rethink Cnergy's proprietary large language model. Specialized AI that runs locally — no API dependency, no per-query costs. Train on your domain. Deploy anywhere.",
   path: "/gritiva",
 });
 
@@ -18,7 +18,7 @@ const BREADCRUMB_JSONLD = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: absoluteUrl("/") },
-    { "@type": "ListItem", position: 2, name: "Gritiva", item: absoluteUrl("/gritiva") },
+    { "@type": "ListItem", position: 2, name: "Private Language Model", item: absoluteUrl("/gritiva") },
   ],
 };
 
@@ -28,7 +28,7 @@ const DEPLOYMENT_OPTIONS = [
     name: "On-Premise",
     best: "Healthcare, finance, regulated industries",
     detail:
-      "Deploy Gritiva entirely on your infrastructure. Your data never leaves your servers. Fixed annual license plus infrastructure costs.",
+      "Deploy entirely on your infrastructure. Your data never leaves your servers. Fixed annual license plus infrastructure costs.",
     href: "/gritiva/private-llm",
   },
   {
@@ -52,7 +52,7 @@ const DEPLOYMENT_OPTIONS = [
     name: "White-Label Partnership",
     best: "Agencies, platform builders, and system integrators",
     detail:
-      "Build your product on Gritiva. Rebrand it. Sell it to your customers. Revenue-sharing partnership plus infrastructure fees.",
+      "Build your product on our Private Language Model. Rebrand it. Sell it to your customers. Revenue-sharing partnership plus infrastructure fees.",
     href: null,
   },
 ];
@@ -72,7 +72,7 @@ export default function GritivaPage() {
       <section className="pt-20 lg:pt-28" aria-labelledby="gritiva-heading">
         <Container>
           <p className="text-xs uppercase tracking-[0.22em] text-copper-600">
-            Gritiva AI Brain
+            Private Language Model
           </p>
           <h1
             id="gritiva-heading"
@@ -81,9 +81,8 @@ export default function GritivaPage() {
             Specialized AI that runs locally. No API dependency.
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-ink-500">
-            Gritiva AI Brain is a proprietary large language model designed for
-            specialized applications. Train on your domain. Deploy on your
-            infrastructure. Pay a fixed cost — not per query.
+            A proprietary large language model designed for specialized applications.
+            Train on your domain. Deploy on your infrastructure. Pay a fixed cost — not per query.
           </p>
 
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-sand-200 pt-10 sm:grid-cols-4">
@@ -128,7 +127,7 @@ export default function GritivaPage() {
                 },
                 {
                   label: "API dependency is a business risk",
-                  body: "Third-party providers can change pricing, throttle access, or alter their terms without notice. Data leaves your infrastructure on every query. Gritiva runs on-premise or hybrid — you own the model and the data.",
+                  body: "Third-party providers can change pricing, throttle access, or alter their terms without notice. Data leaves your infrastructure on every query. Our Private Language Model runs on-premise or hybrid — you own the model and the data.",
                 },
               ].map((item) => (
                 <div key={item.label} className="flex gap-6">
@@ -151,7 +150,7 @@ export default function GritivaPage() {
             Deployment options
           </p>
           <h2 id="deployment-heading" className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">
-            Four ways to deploy Gritiva
+            Four ways to deploy
           </h2>
 
           <ul className="mt-12 grid gap-6 lg:grid-cols-2">
@@ -189,10 +188,10 @@ export default function GritivaPage() {
             Use cases
           </p>
           <h2 id="use-cases-heading" className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">
-            Gritiva in production
+            Private Language Model in production
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-ink-500">
-            Each of Rethink&rsquo;s projects runs on a domain-trained version of Gritiva.
+            Each of Rethink&rsquo;s projects runs on a domain-trained version of the Private Language Model.
             The same infrastructure is available to external partners.
           </p>
 
@@ -212,7 +211,7 @@ export default function GritivaPage() {
               },
               {
                 domain: "DevOps & Infrastructure",
-                example: "Gritiva DevOps Platform",
+                example: "Private LLM DevOps Platform",
                 detail: "System automation, log analysis, incident response, documentation generation. Runs locally — no external API calls for sensitive infrastructure data.",
                 href: null,
               },
@@ -231,7 +230,7 @@ export default function GritivaPage() {
               {
                 domain: "Your domain",
                 example: "White-label partnership",
-                detail: "Train Gritiva on your data. Deploy under your brand. Sell to your customers. Revenue-sharing model.",
+                detail: "Train the Private Language Model on your data. Deploy under your brand. Sell to your customers. Revenue-sharing model.",
                 href: null,
               },
             ].map((item) => (
@@ -262,7 +261,7 @@ export default function GritivaPage() {
             Competitive positioning
           </p>
           <h2 id="comparison-heading" className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">
-            Gritiva vs. the alternatives
+            Private Language Model vs. the alternatives
           </h2>
 
           <div className="mt-12 overflow-x-auto">
@@ -273,7 +272,7 @@ export default function GritivaPage() {
                     Factor
                   </th>
                   <th className="pb-4 text-left font-medium uppercase tracking-wider text-copper-600 text-xs">
-                    Gritiva AI Brain
+                    Private Language Model
                   </th>
                   <th className="pb-4 text-left font-medium text-ink-400 text-xs">
                     ChatGPT API
@@ -311,12 +310,12 @@ export default function GritivaPage() {
             White-label partnerships
           </p>
           <h2 id="partner-heading" className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl">
-            Build your product on Gritiva
+            Build your product on Private Language Model
           </h2>
           <div className="mt-8 space-y-4 text-base leading-relaxed text-ink-600">
             <p>
               If you&rsquo;re an agency, systems integrator, or platform builder who needs
-              domain-specialized AI for your clients — Gritiva is available as a
+              domain-specialized AI for your clients — our Private Language Model is available as a
               white-label platform. Your branding. Your customers. Your pricing. Our
               infrastructure.
             </p>
@@ -338,8 +337,8 @@ export default function GritivaPage() {
       </section>
 
       <CtaBlock
-        eyebrow="Get started with Gritiva"
-        heading="Whether you&rsquo;re evaluating Gritiva for your infrastructure or as an investment — let&rsquo;s talk."
+        eyebrow="Get started"
+        heading="Whether you&rsquo;re evaluating Private Language Model for your infrastructure or as an investment — let&rsquo;s talk."
         primaryLabel="Schedule a demo"
         secondaryHref="/projects"
         secondaryLabel="View all projects"

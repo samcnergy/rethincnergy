@@ -37,13 +37,13 @@ export function Hero() {
             id="hero-heading"
             className="mt-6 max-w-4xl text-balance font-serif text-5xl leading-[1.05] text-ink-800 sm:text-6xl lg:text-7xl xl:text-[88px]"
           >
-            We launch and scale AI companies. Every project runs on Gritiva.
+            We launch and scale AI companies. Every project runs on our Private Language Model.
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-7 max-w-2xl text-balance text-lg leading-relaxed text-ink-500 sm:text-xl">
             Rethink Cnergy is an AI venture studio. We build, self-fund, and scale
-            AI-powered companies. Gritiva AI Brain is the proprietary infrastructure
+            AI-powered companies. Our Private Language Model is the proprietary infrastructure
             that powers every project.
           </p>
         </Reveal>

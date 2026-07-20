@@ -11,7 +11,7 @@ import { CLIENTS } from "@/lib/clients";
 export const metadata = buildMetadata({
   title: "Services — Custom AI Platform Development",
   description:
-    "Rethink Cnergy builds custom AI platforms for external clients: architecture design, Gritiva AI Brain integration, custom training, and local or hybrid deployment. Fixed-scope engagements.",
+    "Rethink Cnergy builds custom AI platforms for external clients: architecture design, Private Language Model integration, custom training, and local or hybrid deployment. Fixed-scope engagements.",
   path: "/services",
 });
 
@@ -24,7 +24,7 @@ const SERVICES = [
     who: "Founders, enterprises, and qualified clients with a specific product or internal workflow that requires specialized AI.",
     deliverables: [
       "Architecture design + AI infrastructure planning",
-      "Gritiva AI Brain integration (or your own LLM)",
+      "Private Language Model integration (or your own LLM)",
       "Custom data pipeline + domain-specific fine-tuning",
       "Local, hybrid, or cloud deployment",
       "Handover documentation + ongoing support",
@@ -119,7 +119,7 @@ export default function ServicesPage() {
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-500 sm:text-xl">
             Beyond our venture projects, we build specialized AI platforms for external
-            clients based on their specific requirements. Architecture, Gritiva AI Brain
+            clients based on their specific requirements. Architecture, Private Language Model
             integration, custom training, and deployment — fixed-scope engagements.
           </p>
         </Container>
@@ -223,20 +223,20 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      {/* Gritiva callout */}
-      <section aria-labelledby="gritiva-services-heading" className="py-24 lg:py-32">
+      {/* Private LLM callout */}
+      <section aria-labelledby="plm-services-heading" className="py-24 lg:py-32">
         <Container size="narrow">
           <p className="text-xs uppercase tracking-[0.22em] text-copper-600">
             Infrastructure
           </p>
           <h2
-            id="gritiva-services-heading"
+            id="plm-services-heading"
             className="mt-4 font-serif text-3xl text-ink-800 sm:text-4xl"
           >
-            Every build runs on Gritiva — or yours
+            Every build runs on Private Language Model — or yours
           </h2>
           <p className="mt-5 text-base leading-relaxed text-ink-500">
-            We integrate Gritiva AI Brain into client platforms when it&rsquo;s the right
+            We integrate our Private Language Model into client platforms when it&rsquo;s the right
             fit — domain-specific training, local deployment, HIPAA-ready, no per-query
             costs. If your project requires a different LLM or existing infrastructure,
             we work with that too.
@@ -246,7 +246,7 @@ export default function ServicesPage() {
               href="/gritiva"
               className="inline-flex items-center gap-2 text-sm font-medium text-copper-600 hover:text-copper-700"
             >
-              Learn about Gritiva AI Brain →
+              Learn about Private Language Model →
             </Link>
           </div>
         </Container>

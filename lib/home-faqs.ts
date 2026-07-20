@@ -63,7 +63,7 @@ export const HOME_FAQS: HomeFaq[] = [
     answer:
       "ReTHINK CNERGY is a California-based boutique firm that helps small businesses rethink how they operate, market, and grow in the age of AI. The firm combines strategic advisory — fractional AI engagements and GEO readiness — with four of its own software products and advisory engagements with a small number of independent client firms.",
     evidence:
-      "ReTHINK CNERGY was founded on October 25, 2021 by Parham Shariat and Mohammad Salamati and is headquartered in Orange County, California. Leadership is Wharton AI-certified with 20-plus years of international operating experience across healthcare, real estate, and consumer goods. The four ReTHINK CNERGY products are SiteMarketing.ai, AloHelp, Brain.Gritiva, and Powerful Blueprints.",
+      "ReTHINK CNERGY was founded on October 25, 2021 by Parham Shariat and Mohammad Salamati and is headquartered in Orange County, California. Leadership is Wharton AI-certified with 20-plus years of international operating experience across healthcare, real estate, and consumer goods. The three ReTHINK CNERGY projects are SiteMarketing.ai, AloHelp, and Private Language Model.",
     takeaway:
       "The firm works with a small number of clients at a time and is specifically built for small businesses that do not have the technical staff to implement AI themselves.",
   },

@@ -26,7 +26,7 @@ export function InvestmentCallout() {
               Rethink Cnergy is building three self-funded AI companies —
               AutismRI (clinical-grade diagnostics for autism spectrum
               disorder), AI Search Optimization (GEO platform for local
-              professionals), and Gritiva AI Brain (proprietary LLM
+              professionals), and a Private Language Model (proprietary LLM
               infrastructure). Each operates as its own business unit with a
               separate revenue model, team, and path to profitability.
             </p>

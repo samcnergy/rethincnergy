@@ -11,7 +11,7 @@ import { PROJECTS } from "@/lib/projects";
 export const metadata = buildMetadata({
   title: "Projects — AI Ventures",
   description:
-    "Rethink Cnergy is an AI venture studio with three active projects: AloHelp (healthcare diagnostics), AI Search Optimization, and Gritiva AI Brain (proprietary LLM infrastructure).",
+    "Rethink Cnergy is an AI venture studio with three active projects: AloHelp (healthcare diagnostics), AI Search Optimization, and a Private Language Model (proprietary LLM infrastructure).",
   path: "/projects",
 });
 
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
             We launch and scale AI-powered companies.
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ink-500 sm:text-xl">
-            Three ventures in market. Each runs on Gritiva AI Brain — our proprietary
+            Three ventures in market. Each runs on our Private Language Model — proprietary
             LLM — and operates as its own business unit with separate financials,
             investment story, and path to profitability.
           </p>
@@ -130,10 +130,10 @@ export default function ProjectsPage() {
       <CtaBlock
         eyebrow="Interested in backing a venture?"
         heading="Each project has its own investment story. Let&rsquo;s talk."
-        body="Whether you&rsquo;re evaluating AloHelp for healthcare AI, the AI Search Optimization platform, or Gritiva as infrastructure — we&rsquo;re happy to walk through the details."
+        body="Whether you&rsquo;re evaluating AloHelp for healthcare AI, the AI Search Optimization platform, or our Private Language Model as infrastructure — we&rsquo;re happy to walk through the details."
         primaryLabel="Start the conversation"
         secondaryHref="/gritiva"
-        secondaryLabel="Learn about Gritiva"
+        secondaryLabel="Private Language Model"
       />
 
       <JsonLd id="projects-org-jsonld" data={ORGANIZATION_JSONLD} />

@@ -17,7 +17,7 @@ import {
 export const metadata = buildMetadata({
   title: "ReTHINK CNERGY — AI Venture Studio",
   description:
-    "Rethink Cnergy is an AI venture studio. We launch and scale AI-powered companies. Gritiva AI Brain is the proprietary infrastructure that powers every project. Three active ventures: AloHelp, AI Search Optimization, and Gritiva.",
+    "Rethink Cnergy is an AI venture studio. We launch and scale AI-powered companies. Our Private Language Model is the proprietary infrastructure that powers every project. Three active ventures: AloHelp, AI Search Optimization, and Private Language Model.",
   path: "/",
 });
 
@@ -34,7 +34,7 @@ export default function HomePage() {
       <CtaBlock
         eyebrow="Work with us"
         heading="Building an AI company? Need custom AI infrastructure? We should talk."
-        body="We work with founders, investors, and enterprises across three paths: venture partnerships, Gritiva AI Brain licensing, and custom platform development."
+        body="We work with founders, investors, and enterprises across three paths: venture partnerships, Private Language Model licensing, and custom platform development."
         primaryLabel="Start the conversation"
         secondaryHref="/projects"
         secondaryLabel="See our projects"

@@ -60,8 +60,8 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "gritiva-ai-brain",
-    name: "Gritiva AI Brain",
-    shortName: "Gritiva",
+    name: "Private Language Model",
+    shortName: "Private LLM",
     tagline:
       "Proprietary LLM infrastructure. Specialized AI that runs locally — no API dependency, no per-query costs.",
     status: "Live · Beta",
