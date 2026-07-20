@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects/alohelp",
     "/projects/ai-search-optimization",
     "/gritiva",
+    "/gritiva/private-llm",
     "/services",
     "/books",
     "/insights",

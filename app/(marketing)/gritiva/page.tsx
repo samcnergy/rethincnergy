@@ -29,6 +29,7 @@ const DEPLOYMENT_OPTIONS = [
     best: "Healthcare, finance, regulated industries",
     detail:
       "Deploy Gritiva entirely on your infrastructure. Your data never leaves your servers. Fixed annual license plus infrastructure costs.",
+    href: "/gritiva/private-llm",
   },
   {
     id: "hybrid",
@@ -36,6 +37,7 @@ const DEPLOYMENT_OPTIONS = [
     best: "Companies wanting data privacy with managed infrastructure",
     detail:
       "Your data stays local. Inference runs on Rethink's managed infrastructure. Fixed annual license plus monthly managed fee.",
+    href: null,
   },
   {
     id: "managed-saas",
@@ -43,6 +45,7 @@ const DEPLOYMENT_OPTIONS = [
     best: "Teams without in-house infrastructure",
     detail:
       "Fully managed by Rethink. Data encryption in transit and at rest. Fixed annual license plus usage-based monthly fee.",
+    href: null,
   },
   {
     id: "white-label",
@@ -50,6 +53,7 @@ const DEPLOYMENT_OPTIONS = [
     best: "Agencies, platform builders, and system integrators",
     detail:
       "Build your product on Gritiva. Rebrand it. Sell it to your customers. Revenue-sharing partnership plus infrastructure fees.",
+    href: null,
   },
 ];
 
@@ -161,6 +165,16 @@ export default function GritivaPage() {
                   <p className="mt-4 flex-1 text-base leading-relaxed text-ink-600">
                     {option.detail}
                   </p>
+                  {option.href && (
+                    <div className="mt-5">
+                      <Link
+                        href={option.href}
+                        className="text-xs font-medium text-copper-600 hover:text-copper-700"
+                      >
+                        Learn more →
+                      </Link>
+                    </div>
+                  )}
                 </article>
               </li>
             ))}

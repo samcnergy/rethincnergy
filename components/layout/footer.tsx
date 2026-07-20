@@ -76,7 +76,7 @@ export function SiteFooter() {
           <ul className="space-y-3 text-ink-500">
             <li><Link href="/gritiva" className="hover:text-copper-600">What is Gritiva?</Link></li>
             <li><Link href="/gritiva#deployment" className="hover:text-copper-600">Deployment options</Link></li>
-            <li><Link href="/gritiva#pricing" className="hover:text-copper-600">Pricing</Link></li>
+            <li><Link href="/gritiva/private-llm" className="hover:text-copper-600">Private LLM</Link></li>
             <li><Link href="/services" className="hover:text-copper-600">Custom platform builds</Link></li>
             <li>
               <a
